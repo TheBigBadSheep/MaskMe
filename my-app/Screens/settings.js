@@ -13,7 +13,7 @@ export default Settings=()=>{
     
       useEffect(()=>{
         getMyStuff('darkmode').then((returnedValue)=>{
-          setDarkmode(JSON.parse(returnedValue));
+          setDarkMode(JSON.parse(returnedValue));
         }).catch(()=> console.log("Fehler beim Darkmode Laden"));
   
         getMyStuff('GPS').then((returnedValue)=>{
@@ -114,8 +114,13 @@ export default Settings=()=>{
         <Text style={styles.impressumHeading}>Impressum</Text>
         <View style={styles.impressum}>
             
-          <Text style={styles.impressumText}>IIIIIIIIIIIIIIIIIIIIIIIIIIIIIMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMPRESSUUUM impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum impressum .</Text>
-
+          <Text style={styles.impressumBigText}>Studierendenprojekt der HAW Hamburg</Text>
+          <Text style={styles.impressumText}>Hochschule für Angewandte Wissenschaften Hamburg</Text> 
+          <Text style={styles.impressumText}>Studiengang: Media Systems, Studienfach Mobile Systeme 2021</Text>
+          <Text style={styles.impressumText}>Berliner Tor 5</Text>
+          <Text style={styles.impressumText}>20099 Hamburg</Text>
+          <Text style={styles.impressumText}>Zu erreichen unter: Tel. +494042875-0</Text>
+          
 
         </View>
     </View>

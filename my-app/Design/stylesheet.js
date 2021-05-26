@@ -155,14 +155,20 @@ export default StyleSheet.create({
       color:maincolor,
       fontSize:30,
       alignSelf:'flex-start',
-      marginLeft: 20,
+      marginLeft: '4%',
       marginTop:'30%',
     },
     impressumText:{
       fontSize:15,
       color: 'white',
-      
-      margin:20,
+      marginLeft:'4%',
+    },
+    impressumBigText:{
+      fontSize:18,
+      fontWeight:'bold',
+      color: 'white',
+      marginLeft:'4%',
+      marginTop:'2%',
     },
 
 
