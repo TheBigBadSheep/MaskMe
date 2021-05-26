@@ -6,7 +6,7 @@ let accentgrey= "#CDC9C9";
 export default StyleSheet.create({
     
     textbalken:{
-      backgroundColor: 'red',
+      backgroundColor: maincolor,
       height:'35%',
       width:'100%',
       marginTop:1,
@@ -18,13 +18,13 @@ export default StyleSheet.create({
       color:maincolor,
       fontSize:38,
       alignSelf:'flex-start',
-      marginLeft: 20,
+      marginLeft: '4%',
       marginBottom:1,
     },
     weisserText:{
       fontSize:20,
       color: 'white',
-      marginLeft:20,
+      marginLeft:'4%',
     },
    upperContainer:{
       flex:1,
@@ -67,7 +67,7 @@ export default StyleSheet.create({
       height:'7%',
       width:'90%',
       backgroundColor:'white',
-      marginTop:20,
+      marginTop:'4%',
       borderRadius: 19 ,
 
       //Schatten IOS
@@ -99,7 +99,7 @@ export default StyleSheet.create({
       backgroundColor:maincolor,
     }, 
     screen:{
-      paddingTop:80,
+      paddingTop:'15%',
       flex:1,
       alignItems:'center',
       flexDirection:'column',
@@ -133,11 +133,9 @@ export default StyleSheet.create({
     settingText:{
       color:maincolor,
       fontSize:20,
-      margin:20,
+      margin:'4%',
     },
-    checkbox:{
-      marginRight:80,
-    },
+    
     settingbox:{
       marginLeft:'6%',
       alignItems:'center',

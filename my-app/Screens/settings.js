@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { TextInput, Text, View , Image, CheckBox} from 'react-native';
+import { TextInput, Text, View , Image} from 'react-native';
 import styles from '../Design/stylesheet';
 import RoundCheckbox from 'react-native-round-checkbox';
 import {storeMyStuff, getMyStuff} from '../StorageStuff/StorageFunctions';
