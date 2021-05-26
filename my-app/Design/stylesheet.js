@@ -164,7 +164,7 @@ export default StyleSheet.create({
 
 //Ab hier Styles für den List Screen
   scrollView:{
-      marginBottom:'10%',
+      marginBottom:'8%',
       marginTop:'8%',
       height:'80%',
       width:'90%',
@@ -192,12 +192,24 @@ export default StyleSheet.create({
       marginLeft:'5%',
       
     },
-    listPointBox:{
+    listHinweis:{
+      fontSize:22,
+      color: maincolor,
       
+      
+    },
+
+    listPointBox:{
      margin:'1%',
       flex:1,
       flexDirection:'row',
     },
+    listPointBoxHinweis:{
+      marginTop:'7%',
+      margin:'1%',
+       flex:1,
+       flexDirection:'row',
+     },
 
 
 
