@@ -40,17 +40,9 @@ export default StyleSheet.create({
       alignItems:'center',
       justifyContent:'flex-start',
     }, 
-    middleContainerList:{
-      flex:3.5,
-      width: '100%',
-      height: '70%',
-      backgroundColor:'white',
-      alignItems:'center',
-      justifyContent:'flex-start',
-    },
+    
     placeforMap:{
       marginTop:'10%',
-      backgroundColor:maincolor,
       height:'80%',
       width:'80%',
       borderColor:accentgrey,
@@ -170,8 +162,42 @@ export default StyleSheet.create({
     },
 
 
-
-
+//Ab hier Styles für den List Screen
+  scrollView:{
+      marginBottom:'10%',
+      marginTop:'8%',
+      height:'80%',
+      width:'90%',
+     
+     
+    },
+    middleContainerList:{
+      flex:3.5,
+      width: '100%',
+      height: '70%',
+      backgroundColor:'white',
+      alignItems:'center',
+      justifyContent:'flex-start',
+      
+    },
+     listText:{
+      fontSize:18,
+      color: accentgrey,
+      marginLeft:'5%',
+      marginRight:'5.5%',
+    },
+    listTextBeginning:{
+      fontSize:20,
+      color: 'grey',
+      marginLeft:'5%',
+      
+    },
+    listPointBox:{
+      
+     margin:'1%',
+      flex:1,
+      flexDirection:'row',
+    },
 
 
 
@@ -182,12 +208,7 @@ export default StyleSheet.create({
   
    
    
-    scrollView: {
    
-      width: '80%',
-      height: '60%',
-      backgroundColor: maincolor,
-    },
     taskcontainer:{
     
         marginVertical: 15,

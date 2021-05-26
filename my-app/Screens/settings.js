@@ -1,9 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import { TextInput, Text, View , Image} from 'react-native';
+import { Text, View , Image} from 'react-native';
 import styles from '../Design/stylesheet';
 import RoundCheckbox from 'react-native-round-checkbox';
 import {storeMyStuff, getMyStuff} from '../StorageStuff/StorageFunctions';
-import { Ionicons } from '@expo/vector-icons';
+
 
 
 export default Settings=()=>{
