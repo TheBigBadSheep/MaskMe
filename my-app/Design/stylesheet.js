@@ -6,7 +6,7 @@ let accentgrey= "#CDC9C9";
 export default StyleSheet.create({
     
     textbalken:{
-      backgroundColor: maincolor,
+      backgroundColor: 'red',
       height:'35%',
       width:'100%',
       marginTop:1,
