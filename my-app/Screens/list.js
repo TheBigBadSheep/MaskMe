@@ -9,10 +9,11 @@ export default List=()=>{
     return(
         
     <View style={styles.screen}>
+
     {/* upperContainer ist der mit Logo und Hinweisbalken */}
     <View style={styles.upperContainer}>
       <Image style={{height:'27%', width:'14%',alignSelf:'flex-start', marginLeft: 20, marginBottom: 20,}} source={require('../Design/pics/apple.png')} />
-      <Text style={styles.fetteSchrift}>Liste</Text>
+      <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', paddingBottom:0,}}>Liste</Text>
       <View style={styles.textbalken}>
           <Text style={styles.weisserText}>Maskenpflichtige Orte, Straßen und Ausnahmen, weitergehend als Beförderungsmittel</Text>
       </View>
@@ -21,12 +22,17 @@ export default List=()=>{
     {/* MittlererContainer ist hier für die Aufzählung von Orten */}
     <View style={styles.middleContainerList}>
     <ScrollView style={styles.scrollView}>
-      
+        
+        {/*Dabei ist immer Ein Punkt inklusive seinem Pfeil in einer View, damit die nebeneinander sein können */}
         <View style={styles.listPointBox}>
                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
+
+                {/*Hier ist quasi Text in Text, damit die Hauptwörter ne andere Farbe haben können */}
                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Steindamm: </Text> im räumlichen Bereich von der Hausnummer 33 bis zum Steintorplatz, täglich von 8 Uhr bis 22 Uhr </Text>
         </View>
 
+
+        {/*Jetzt kommt 36 mal das gleiche nur mit anderen Punkten */}
         <View style={styles.listPointBox}>
                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Stralsunder Straße:</Text> täglich von 8 Uhr bis 22 Uhr </Text>
@@ -180,6 +186,8 @@ export default List=()=>{
         </View>
         <View style={styles.listPointBox}>
                 <Ionicons name="reader-outline" style={styles.listIcons} size={22} />
+
+                {/*Hier ist noch n Link hinter dem Wort 'Website' hinterlegt, damit man direkt auf die Quelle kommt. */}
                 <Text style={styles.listText}><Text style={styles.listHinweis}>Quelle:</Text> Die Daten für maskenpflichtige Orte, Straßen und Ausnahmen wurden aus der offiziellen <Text style={{color: '#B2E0E6'}}
             onPress={() => Linking.openURL('https://www.hamburg.de/coronavirus/aktuelles/14435302/2020-10-10-maskenpflicht-an-oeffentlichen-plaetzen/')}>
                 Website

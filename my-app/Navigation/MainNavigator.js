@@ -6,9 +6,10 @@ const Tab = createBottomTabNavigator();
 import Home from '../Screens/Home';
 import list from '../Screens/list';
 import settings from '../Screens/settings';
-import { setStatusBarBackgroundColor } from 'expo-status-bar';
 export default MainNavigator =()=>{
 
+
+    //Ich denke selbsterklärend? dunno
     return(
         <NavigationContainer>
             

@@ -1,5 +1,8 @@
 import {StyleSheet } from 'react-native';
 
+import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
+import { Pattaya_400Regular } from '@expo-google-fonts/pattaya';
+
 let maincolor= "#B2E0E6";
 let accentgrey= "#CDC9C9";
 
@@ -7,8 +10,8 @@ export default StyleSheet.create({
     
     textbalken:{
       backgroundColor: maincolor,
-      height:'35%',
-      width:'100%',
+      
+      flex:1,
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -223,20 +226,6 @@ export default StyleSheet.create({
   
    
    
-   
-    taskcontainer:{
-    
-        marginVertical: 15,
-        height: 50,
-        width: '80%',
-        alignItems: 'center',
-        justifyContent: 'center',
-        backgroundColor: '#79bde9',
-        borderRadius: 10,
-        shadowColor: 'black',
-        shadowOffset:{width:0, height:2},
-        shadowOpacity: 0.26,
-        shadowRadius: 100,
-    },
+
   
   });

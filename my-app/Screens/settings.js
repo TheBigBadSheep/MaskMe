@@ -61,7 +61,7 @@ export default Settings=()=>{
     {/* upperContainer ist der mit Logo und Hinweisbalken */}
     <View style={styles.upperContainer}>
       <Image style={{height:'27%', width:'14%',alignSelf:'flex-start', marginLeft: 20, marginBottom: 20,}} source={require('../Design/pics/apple.png')} />
-      <Text style={styles.fetteSchrift}>Einstellungen</Text>
+      <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', paddingBottom:0,}}>Einstellungen</Text>
       <View style={styles.textbalken}>
           <Text style={styles.weisserText}>Aktiviere für Benachrichtigungen bei Betreten einer Maskenzone "Push-Benachrichtigungen" und "GPS".</Text>
       </View>
@@ -69,7 +69,8 @@ export default Settings=()=>{
 
     <View style={styles.middleContainerSettings}>
         <View style={styles.placeforMapSettings}>
-          
+
+            {/* Eine Einstellung ist mit ihrem Pünktchen immer in ner eigenen TouchableOpacity, damit man auch die Wörter antippen kann und es sich ändert. Außerdem kann man die so nebeneinander ordnen */}
             <TouchableOpacity style={styles.settingbox} onPress={changeNotification}>
                 <RoundCheckbox
                     size={20}

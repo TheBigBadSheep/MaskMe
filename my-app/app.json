@@ -21,7 +21,6 @@
     },
     "android": {
       "adaptiveIcon": {
-        "windowSoftInputMode":"adjustNothing",
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       }
