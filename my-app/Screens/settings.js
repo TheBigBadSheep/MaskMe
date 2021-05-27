@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import { Text, View , Image} from 'react-native';
+import { Text, View , Image, TouchableOpacity} from 'react-native';
 import styles from '../Design/stylesheet';
 import RoundCheckbox from 'react-native-round-checkbox';
 import {storeMyStuff, getMyStuff} from '../StorageStuff/StorageFunctions';
@@ -45,7 +45,7 @@ export default Settings=()=>{
           storeMyStuff('GPS',true);
         }
     }
-    const changeDarkmode=()=>{
+    const changeDarkMode=()=>{
         if(isDarkMode===true){
             setDarkMode(false);
             storeMyStuff('darkmode',false);
@@ -70,19 +70,20 @@ export default Settings=()=>{
     <View style={styles.middleContainerSettings}>
         <View style={styles.placeforMapSettings}>
           
-            <View style={styles.settingbox}>
+            <TouchableOpacity style={styles.settingbox} onPress={changeNotification}>
                 <RoundCheckbox
                     size={20}
                     borderColor={'#B2E0E6'}
                     backgroundColor={"#B2E0E6"}
                     iconColor={'white'}
                     checked={areNotifications}
-                    onValueChange={(changeNotification)}
+                    onValueChange={changeNotification}
                     style={styles.checkbox}
                 />
                 <Text style={styles.settingText}>Push-Benachrichtigungen</Text>
-            </View>
-            <View style={styles.settingbox}>
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.settingbox} onPress={changeGPS}>
                 <RoundCheckbox
                     size={20}
                     borderColor={'#B2E0E6'}
@@ -93,20 +94,20 @@ export default Settings=()=>{
                     style={styles.checkbox}
                 />
                 <Text style={styles.settingText}>GPS Daten nutzen </Text>
-            </View>
-            <View style={styles.settingbox}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.settingbox}onPress={changeDarkMode}>
                 <RoundCheckbox
                     size={20}
                     borderColor={'#B2E0E6'}
                     backgroundColor={"#B2E0E6"}
                     iconColor={'white'}
                     checked={isDarkMode}
-                    onValueChange={changeDarkmode}
+                    onValueChange={changeDarkMode}
                     style={styles.checkbox}
                 />
                 <Text style={styles.settingText}>Dark Mode hahaha als wenn </Text>
                 
-            </View>
+            </TouchableOpacity>
           
           
         </View>

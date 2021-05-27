@@ -175,12 +175,12 @@ export default List=()=>{
         </View>
 
         <View style={styles.listPointBoxHinweis}>
-            <Ionicons name="alert-circle-outline" size={22}  color='#B2E0E6' />
+            <Ionicons name="alert-circle-outline" size={22}  style={styles.listIcons}/>
             <Text style={styles.listText}><Text style={styles.listHinweis}>Bitte beachte: </Text>Die Polizei kann im Einzelfall auf öffentlichen Wegen, Straßen oder Plätzen eine räumlich begrenzte Maskenpflicht anordnen, wenn dies aus Infektionsschutzgründen erforderlich ist. Dies ist insbesondere der Fall, wenn das Abstandsgebot durch einen erheblichen Teil der anwesenden Personen nicht eingehalten wird oder aufgrund der räumlichen Verhältnisse oder der Anzahl der anwesenden Personen nicht eingehalten werden kann.</Text>
         </View>
         <View style={styles.listPointBox}>
-                <Ionicons name="reader-outline" size={22} color='#B2E0E6' />
-                <Text style={styles.listText}><Text style={styles.listHinweis}>Quelle:</Text> Die Daten für maskenpflichtige Orte, Straßen und Ausnahmen wurden aus der folgenden, offiziellen <Text style={{color: '#B2E0E6'}}
+                <Ionicons name="reader-outline" style={styles.listIcons} size={22} />
+                <Text style={styles.listText}><Text style={styles.listHinweis}>Quelle:</Text> Die Daten für maskenpflichtige Orte, Straßen und Ausnahmen wurden aus der offiziellen <Text style={{color: '#B2E0E6'}}
             onPress={() => Linking.openURL('https://www.hamburg.de/coronavirus/aktuelles/14435302/2020-10-10-maskenpflicht-an-oeffentlichen-plaetzen/')}>
                 Website
         </Text> der Stadt Hamburg entnommen. Es wird keine Garantie für Korrektheit und/oder Aktuellheit der Angaben übernommen. Stand 26. Mai 2021</Text>

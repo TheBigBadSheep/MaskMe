@@ -9,7 +9,6 @@ export default StyleSheet.create({
       backgroundColor: maincolor,
       height:'35%',
       width:'100%',
-      marginTop:1,
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -19,7 +18,6 @@ export default StyleSheet.create({
       fontSize:38,
       alignSelf:'flex-start',
       marginLeft: '4%',
-      marginBottom:1,
     },
     weisserText:{
       fontSize:20,
@@ -135,18 +133,19 @@ export default StyleSheet.create({
       flexDirection:'row',
     },
     impressum:{
-      marginTop:'6%',
+     
       height:'20%',
       width:'100%',
       backgroundColor:maincolor,
       
     },
     impressumHeading:{
+     
       color:maincolor,
       fontSize:30,
       alignSelf:'flex-start',
       marginLeft: '4%',
-      marginTop:'30%',
+      marginTop:'35%',
     },
     impressumText:{
       fontSize:15,
@@ -197,6 +196,10 @@ export default StyleSheet.create({
       color: maincolor,
       
       
+    },
+    listIcons:{
+      marginTop:'1%',
+      color:'#B2E0E6',
     },
 
     listPointBox:{
