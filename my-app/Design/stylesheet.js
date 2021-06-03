@@ -8,6 +8,10 @@ let accentgrey= "#CDC9C9";
 
 export default StyleSheet.create({
     
+  wrapperIOS: {       //Einfach test für Screen size bei IOS aus der Vorlesung
+    height: '100%'
+  },
+
     textbalken:{
       backgroundColor: maincolor,
       
@@ -26,15 +30,15 @@ export default StyleSheet.create({
       fontSize:20,
       color: 'white',
       marginLeft:'4%',
+      alignContent: 'center',
     },
    upperContainer:{
       flex:1,
       width: '100%',
       height: '70%',
-      
-  
-    },middleContainer:{
-      flex:3.5,
+    },
+    middleContainer:{
+      flex:3,
       width: '100%',
       height: '70%',
       backgroundColor:'white',
@@ -48,6 +52,7 @@ export default StyleSheet.create({
       width:'80%',
       borderColor:accentgrey,
       borderWidth:1,
+      flex: 3
       
     },
     map:{
@@ -79,10 +84,7 @@ export default StyleSheet.create({
       textAlign: 'center',
       fontSize:18,
    
-      width:'75%',
-      
-    
-   
+      width:'75%',      
     },
    
     bottomContainer:{
@@ -92,7 +94,7 @@ export default StyleSheet.create({
       backgroundColor:maincolor,
     }, 
     screen:{
-      paddingTop:'15%',
+      paddingTop:'10%',
       flex:1,
       alignItems:'center',
       flexDirection:'column',
@@ -106,8 +108,6 @@ export default StyleSheet.create({
       backgroundColor:'white',
       alignItems:'center',
       justifyContent:'flex-start',
-
-      
     },
     placeforMapSettings:{
      
@@ -119,8 +119,6 @@ export default StyleSheet.create({
       justifyContent:'center',
 
       marginTop:'10%',
-    
-      
     },
     
     settingText:{
@@ -167,7 +165,7 @@ export default StyleSheet.create({
 //Ab hier Styles für den List Screen
   scrollView:{
       marginBottom:'8%',
-      marginTop:'8%',
+      marginTop:'5%',
       height:'80%',
       width:'90%',
      
