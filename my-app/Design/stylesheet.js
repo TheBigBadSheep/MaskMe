@@ -9,13 +9,16 @@ let accentgrey= "#CDC9C9";
 export default StyleSheet.create({
     
   wrapperIOS: {       //Einfach test für Screen size bei IOS aus der Vorlesung
-    height: '100%'
+    height: '100%',
+
   },
 
     textbalken:{
+      marginTop: '0%',
+      height: 80,
+      width: '100%',
       backgroundColor: maincolor,
-      
-      flex:1,
+      //flex:1,
       alignItems: 'center',
       justifyContent: 'center',
     },
@@ -35,7 +38,7 @@ export default StyleSheet.create({
    upperContainer:{
       flex:1,
       width: '100%',
-      height: '70%',
+      marginTop: '5%'
     },
     middleContainer:{
       flex:3,
@@ -52,7 +55,7 @@ export default StyleSheet.create({
       width:'80%',
       borderColor:accentgrey,
       borderWidth:1,
-      flex: 3
+      flex: 2
       
     },
     map:{
@@ -79,6 +82,16 @@ export default StyleSheet.create({
       alignItems:'center',
      
     },
+
+    logoStyle:{
+      height:30, 
+      width:50,
+      alignSelf:'flex-end', 
+      marginRight: 20, 
+      marginBottom: -70,
+      //flex: 1,
+    },
+
     placeinput:{
       height:'90%',
       textAlign: 'center',
@@ -135,10 +148,11 @@ export default StyleSheet.create({
     },
     impressum:{
      
-      height:'20%',
+     // flex: 7,
+      height:'30%',
       width:'100%',
       backgroundColor:maincolor,
-      
+      marginBottom: '50%'
     },
     impressumHeading:{
      
@@ -146,7 +160,7 @@ export default StyleSheet.create({
       fontSize:30,
       alignSelf:'flex-start',
       marginLeft: '4%',
-      marginTop:'35%',
+      marginTop:'20%',
     },
     impressumText:{
       fontSize:15,
@@ -168,9 +182,14 @@ export default StyleSheet.create({
       marginTop:'5%',
       height:'80%',
       width:'90%',
-     
-     
     },
+  scrollViewHome:{
+    
+    height: '100%',
+    width: '100%',
+    flexGrow: 1,
+
+  },
     middleContainerList:{
       flex:3.5,
       width: '100%',

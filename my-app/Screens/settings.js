@@ -1,15 +1,16 @@
 import React, {useState, useEffect} from 'react';
-import { Text, View , Image, TouchableOpacity} from 'react-native';
+import { Text, View , Image, TouchableOpacity, ScrollView} from 'react-native';
 import styles from '../Design/stylesheet';
 import RoundCheckbox from 'react-native-round-checkbox';
 import {storeMyStuff, getMyStuff} from '../StorageStuff/StorageFunctions';
-
+import { useDimensions } from '@react-native-community/hooks';
 
 
 export default Settings=()=>{
     const [areNotifications, setNotifications] = useState(false)
     const [isGPS, setGPS] = useState(false)
     const [isDarkMode, setDarkMode] = useState(false)
+    const {height} = useDimensions().window;
     
       useEffect(()=>{
         getMyStuff('darkmode').then((returnedValue)=>{
@@ -56,12 +57,13 @@ export default Settings=()=>{
     }
 
     return(
-        
+    <View style={Platform.select({ios: styles.wrapperIOS, android:{height: height} }) } >  
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>   
     <View style={styles.screen}>
     {/* upperContainer ist der mit Logo und Hinweisbalken */}
     <View style={styles.upperContainer}>
-      <Image style={{height:'27%', width:'14%',alignSelf:'flex-start', marginLeft: 20, marginBottom: 20,}} source={require('../Design/pics/apple.png')} />
-      <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', paddingBottom:0,}}>Einstellungen</Text>
+    <Image style={styles.logoStyle} source={require('../Design/pics/apple.png')} />
+      <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', marginTop: '5%',paddingBottom:0,}}>Einstellungen</Text>
       <View style={styles.textbalken}>
           <Text style={styles.weisserText}>Aktiviere für Benachrichtigungen bei Betreten einer Maskenzone "Push-Benachrichtigungen" und "GPS".</Text>
       </View>
@@ -127,6 +129,8 @@ export default Settings=()=>{
         </View>
     </View>
         
+</View>
+</ScrollView>
 </View>
     );
 };
