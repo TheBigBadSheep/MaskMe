@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { TextInput, Text,ScrollView, KeyboardAvoidingView, View , Keyboard, Image, ImageBackground, TouchableOpacity} from 'react-native';
+import { TextInput, Text,KeyboardAvoidingView, View ,Image, ImageBackground, TouchableOpacity} from 'react-native';
 import styles from '../Design/stylesheet';
 import { Ionicons } from '@expo/vector-icons';
 import AppLoading from 'expo-app-loading';

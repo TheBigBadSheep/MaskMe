@@ -1,7 +1,5 @@
 import {StyleSheet } from 'react-native';
 
-import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
-import { Pattaya_400Regular } from '@expo-google-fonts/pattaya';
 
 let maincolor= "#B2E0E6";
 let accentgrey= "#CDC9C9";
@@ -23,9 +21,10 @@ export default StyleSheet.create({
       marginLeft: '4%',
     },
     weisserText:{
-      fontSize:20,
+      fontSize: Platform.OS === "ios" ? 17 : 20,
       color: 'white',
       marginLeft:'4%',
+
     },
    upperContainer:{
       flex:1,
