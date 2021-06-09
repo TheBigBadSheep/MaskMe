@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { TextInput, Text, View , Image, ImageBackground, TouchableOpacity} from 'react-native';
+import { TextInput, Text,ScrollView, KeyboardAvoidingView, View , Keyboard, Image, ImageBackground, TouchableOpacity} from 'react-native';
 import styles from '../Design/stylesheet';
 import { Ionicons } from '@expo/vector-icons';
 import AppLoading from 'expo-app-loading';
@@ -26,8 +26,12 @@ export default Home=()=> {
   }else{
  
    return (
-    
-    <View style={styles.screen}>
+    <KeyboardAvoidingView
+    style={styles.screen}
+    enabled true
+      behavior={Platform.OS === "ios" ? "padding" : "heigh"}
+      
+    >
         {/* upperContainer ist der mit Logo und Hinweisbalken */}
         <View style={styles.upperContainer}>
           <Image style={{height:'27%', width:'14%',alignSelf:'flex-start', marginLeft: 20, marginBottom: 20,}} source={require('../Design/pics/apple.png')} />
@@ -65,9 +69,7 @@ export default Home=()=> {
   
     
 
-    
-          
-    </View>
+    </KeyboardAvoidingView>
   );
 }
 

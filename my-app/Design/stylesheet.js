@@ -92,10 +92,10 @@ export default StyleSheet.create({
       backgroundColor:maincolor,
     }, 
     screen:{
-      paddingTop:'15%',
+      paddingTop:'10%',
       flex:1,
       alignItems:'center',
-      flexDirection:'column',
+      justifyContent:'center',
       backgroundColor: 'white',
     },
   
