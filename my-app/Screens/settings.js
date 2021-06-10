@@ -61,7 +61,7 @@ export default Settings=()=>{
     {/* upperContainer ist der mit Logo und Hinweisbalken */}
     <View style={styles.upperContainer}>
       <Image style={{height:'27%', width:'14%',alignSelf:'flex-start', marginLeft: 20, marginBottom: 20,}} source={require('../Design/pics/apple.png')} />
-      <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', paddingBottom:0,}}>Einstellungen</Text>
+      <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', paddingBottom:10,}}>Einstellungen</Text>
       <View style={styles.textbalken}>
           <Text style={styles.weisserText}>Aktiviere für Benachrichtigungen bei Betreten einer Maskenzone "Push-Benachrichtigungen" und "GPS".</Text>
       </View>

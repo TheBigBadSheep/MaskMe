@@ -37,7 +37,7 @@ export default Home=()=> {
           <Image style={{height:'27%', width:'14%',alignSelf:'flex-start', marginLeft: 20, marginBottom: 20,}} source={require('../Design/pics/apple.png')} />
           
           {/**Die Header haben ihren Style immer direkt definiert, nicht im Stylesheet, wegen der custom Font. */}
-          <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', paddingBottom:0,}} >Hinweis</Text>
+          <Text style={{flex:1,fontFamily:'Lobster_400Regular', color:'#B2E0E6',fontSize:50,fontWeight:'normal', alignSelf:'flex-start', marginLeft: '4%', paddingBottom:10,}} >Hinweis</Text>
           <View style={styles.textbalken}>
               <Text style={styles.weisserText }>In Bussen, Bahnen und  an Haltestellen gilt eine FFP-2 Maskenpflicht</Text>
           </View>

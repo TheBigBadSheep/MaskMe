@@ -18,7 +18,7 @@ export default StyleSheet.create({
       color:maincolor,
       fontSize:38,
       alignSelf:'flex-start',
-      marginLeft: '4%',
+      marginLeft: '8%',
     },
     weisserText:{
       fontSize:  0.04*screen.width,
