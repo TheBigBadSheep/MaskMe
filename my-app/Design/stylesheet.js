@@ -144,13 +144,14 @@ export default StyleSheet.create({
     impressumHeading:{
      
       color:maincolor,
-      fontSize:30,
+      fontSize:  0.05*screen.width,
       alignSelf:'flex-start',
       marginLeft: '4%',
       marginTop:'35%',
     },
     impressumText:{
-      fontSize:15,
+      
+      fontSize:  0.03*screen.width,
       color: 'white',
       marginLeft:'4%',
     },
