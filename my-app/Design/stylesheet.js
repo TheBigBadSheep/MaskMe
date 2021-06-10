@@ -1,9 +1,9 @@
-import {StyleSheet } from 'react-native';
+import {StyleSheet, Dimensions } from 'react-native';
 
 
 let maincolor= "#B2E0E6";
 let accentgrey= "#CDC9C9";
-
+const screen = Dimensions.get("screen");
 export default StyleSheet.create({
     
     textbalken:{
@@ -21,7 +21,7 @@ export default StyleSheet.create({
       marginLeft: '4%',
     },
     weisserText:{
-      fontSize: Platform.OS === "ios" ? 17 : 20,
+      fontSize:  0.04*screen.width,
       color: 'white',
       marginLeft:'4%',
 
