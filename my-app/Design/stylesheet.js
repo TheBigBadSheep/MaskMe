@@ -21,7 +21,7 @@ export default StyleSheet.create({
       marginLeft: '8%',
     },
     weisserText:{
-      fontSize:  0.04*screen.width,
+      fontSize:  0.018*screen.height,
       color: 'white',
       marginLeft:'4%',
 
@@ -144,7 +144,7 @@ export default StyleSheet.create({
     impressumHeading:{
      
       color:maincolor,
-      fontSize:  0.05*screen.width,
+      fontSize:  0.03*screen.height,
       alignSelf:'flex-start',
       marginLeft: '4%',
       marginTop:'35%',
@@ -161,6 +161,10 @@ export default StyleSheet.create({
       color: 'white',
       marginLeft:'4%',
       marginTop:'2%',
+    },scrollView2:{
+     
+     
+     
     },
 
 

@@ -66,8 +66,9 @@ export default Settings=()=>{
           <Text style={styles.weisserText}>Aktiviere für Benachrichtigungen bei Betreten einer Maskenzone "Push-Benachrichtigungen" & "GPS".</Text>
       </View>
     </View>
-
     <View style={styles.middleContainerSettings}>
+      
+
         <View style={styles.placeforMapSettings}>
 
             {/* Eine Einstellung ist mit ihrem Pünktchen immer in ner eigenen TouchableOpacity, damit man auch die Wörter antippen kann und es sich ändert. Außerdem kann man die so nebeneinander ordnen */}

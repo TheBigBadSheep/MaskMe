@@ -26,11 +26,10 @@ export default Home=()=> {
   }else{
  
    return (
-    <KeyboardAvoidingView
+    <View
     style={styles.screen}
     enabled true
-      behavior={Platform.OS === "ios" ? "padding" : "heigh"}
-      
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
     >
         {/* upperContainer ist der mit Logo und Hinweisbalken */}
         <View style={styles.upperContainer}>
@@ -69,7 +68,7 @@ export default Home=()=> {
   
     
 
-    </KeyboardAvoidingView>
+    </View>
   );
 }
 
