@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { TextInput, Text, KeyboardAvoidingView, View, Image, ImageBackground, TouchableOpacity } from 'react-native';
+import { TextInput, Text, KeyboardAvoidingView, View, Image, ImageBackground, TouchableOpacity, StyleSheet } from 'react-native';
 import styles from '../Design/stylesheet';
 import { Ionicons } from '@expo/vector-icons';
 import AppLoading from 'expo-app-loading';
@@ -45,11 +45,11 @@ export default Home = () => {
 
         {/* MittlererContainer ist die Map und Searchbar */}
         <View style={styles.middleContainer}>
-          <View style={styles.placeforMap}>
+          <View style={styles.placeforMap, StyleSheet.absoluteFillObject}>
             {/*Die Map hab ich einfach nur als Bild eingesetzt, als Platzhalter. Hier muss dann irgendwie Maps oder so rein 
             <ImageBackground source={require('../Design/pics/map.png')} style={styles.map}>*/}
             <MapView
-              style={styles.map}
+              style={styles.map, StyleSheet.absoluteFillObject}
               initialRegion={{
                 latitude: 53.5502,
                 longitude: 9.9920,
@@ -66,6 +66,7 @@ export default Home = () => {
 
               </View>
             </MapView>
+            {/*kp wieso*/}
             <View style={{ position: 'absolute', top: 100, left: 50 }} />
             {/*</ImageBackground>*/}
 
