@@ -3,7 +3,7 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
 const Tab = createBottomTabNavigator();
-import Home from '../Screens/Home';
+import Home from '../Screens/Home'; //Home und Home2 switchen
 import list from '../Screens/list';
 import settings from '../Screens/settings';
 export default MainNavigator =()=>{
