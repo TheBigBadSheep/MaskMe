@@ -66,6 +66,7 @@ export default Home = () => {
 
               </View>
             </MapView>
+            <View style={{ position: 'absolute', top: 100, left: 50 }} />
             {/*</ImageBackground>*/}
 
           </View>
