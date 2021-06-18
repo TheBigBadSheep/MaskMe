@@ -11,7 +11,7 @@ export default Home = () => {
 
   //Das ist die Variable für die Eingabe eines Ortes. Die wird dann hier drin gespeichert
   const [currentText, changeCurrentText] = useState('');
-
+  
   //Das ist die Funktion um die oben genannte Variable zu ändern (Wird bei tippen auf die Lupe aufgerufen)
   const changingText = newText => {
     if (newText != '') { changeCurrentText(newText); }
@@ -58,10 +58,17 @@ export default Home = () => {
               }}>
               {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
               <View style={styles.searchContainer}>
-                <TextInput style={styles.placeinput} placeholder="Suche einen Ort" onChangeText={() => changingText} value={currentText}>
+                
+                <TextInput
+                 style={styles.placeinput}
+                 placeholder="Suche einen Ort" 
+                 onChangeText={() => changingText } 
+                 //value={currentText}
+                 >
                 </TextInput>
+
                 <TouchableOpacity onPress={() => console.log('dhjksds')}>
-                  <Ionicons name="search-outline" size={32} color='#CDC9C9' style={{ marginLeft: '5%' }} />
+                  <Ionicons name="search-outline" size={30} color='#CDC9C9' style={{ marginLeft: '3%' }} />
                 </TouchableOpacity>
 
               </View>

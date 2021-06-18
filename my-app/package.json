@@ -14,6 +14,7 @@
     "@expo-google-fonts/lobster": "^0.1.0",
     "@expo-google-fonts/pattaya": "^0.1.0",
     "@expo-google-fonts/stint-ultra-condensed": "^0.1.0",
+    "@expo/vector-icons": "^12.0.5",
     "@react-native-async-storage/async-storage": "^1.15.4",
     "@react-native-community/masked-view": "0.1.10",
     "@react-navigation/bottom-tabs": "^5.11.11",
@@ -28,6 +29,7 @@
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
     "react-native-elements": "^3.4.1",
     "react-native-gesture-handler": "~1.8.0",
+    "react-native-maps": "0.27.1",
     "react-native-reanimated": "~1.13.0",
     "react-native-round-checkbox": "^1.0.2",
     "react-native-safe-area-context": "3.1.9",
@@ -35,8 +37,7 @@
     "react-native-shadow": "^1.2.2",
     "react-native-sqlite-storage": "^5.0.0",
     "react-native-vector-icons": "^8.1.0",
-    "react-native-web": "~0.13.12",
-    "react-native-maps": "0.27.1"
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0"
