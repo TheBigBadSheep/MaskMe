@@ -4,7 +4,7 @@ import styles from '../Design/stylesheet';
 import { Ionicons } from '@expo/vector-icons';
 import AppLoading from 'expo-app-loading';
 import { SearchBar } from 'react-native-elements';
-import MapView, { PROVIDER_GOOGLE } from 'react-native-maps';
+import MapView, { Marker, PROVIDER_GOOGLE } from 'react-native-maps';
 
 import { useFonts, Lobster_400Regular } from '@expo-google-fonts/lobster';
 import { element } from 'prop-types';
@@ -57,13 +57,26 @@ export default Home = () => {
               <MapView
                 style={styles.map, StyleSheet.absoluteFillObject}
                 provider={PROVIDER_GOOGLE}
-                showsUserLocation
+                showsUserLocation={true}
                 initialRegion={{
                   latitude: 53.5502,
                   longitude: 9.9920,
                   latitudeDelta: 0.1,
                   longitudeDelta: 0.05,
                 }}>
+
+                <Marker
+                  draggable
+                  coordinate={{
+                    latitude: 53.5,
+                    longitude: 10,
+                  }}
+                  onDragEnd={
+                    (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
+                  }
+                  title={'Meep'}
+                  description={'Moin Servus Moin'}
+                />
               </MapView>
 
               {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
