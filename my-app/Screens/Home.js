@@ -46,6 +46,7 @@ export default Home = () => {
         {/* MittlererContainer ist die Map und Searchbar */}
         <View style={styles.middleContainer}>
           <View style={styles.placeforMap, StyleSheet.absoluteFillObject}>
+            
             {/*Die Map hab ich einfach nur als Bild eingesetzt, als Platzhalter. Hier muss dann irgendwie Maps oder so rein 
             <ImageBackground source={require('../Design/pics/map.png')} style={styles.map}>*/}
             <MapView
@@ -56,8 +57,11 @@ export default Home = () => {
                 latitudeDelta: 0.1,
                 longitudeDelta: 0.05,
               }}>
-              {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
-              <View style={styles.searchContainer}>
+             
+            </MapView>
+
+             {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
+             <View style={styles.searchContainer}>
                 
                 <TextInput
                  style={styles.placeinput}
@@ -72,7 +76,7 @@ export default Home = () => {
                 </TouchableOpacity>
 
               </View>
-            </MapView>
+              
             {/*kp wieso*/}
             <View style={{ position: 'absolute', top: 100, left: 50 }} />
             {/*</ImageBackground>*/}

@@ -84,7 +84,7 @@ export default StyleSheet.create({
   },
 
   placeinput: {
-    height: '90%',
+    height: '100%',
     textAlign: 'center',
     fontSize: 18,
     width: '75%',
