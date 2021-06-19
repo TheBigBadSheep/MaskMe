@@ -60,7 +60,7 @@ export default StyleSheet.create({
   searchContainer: {
     flexDirection: "row",
     height: '7%',
-    width: '90%',
+    width: '100%',
     backgroundColor: 'white',
     marginTop: '4%',
     borderRadius: 19,
