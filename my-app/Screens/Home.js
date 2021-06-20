@@ -518,19 +518,49 @@ export default Home = () => {
                  {/*Krugkoppelbrücke*/}
                  <Polyline
                   coordinates={[
-                    {latitude: 53.56754060188977, longitude: 10.016382305478759},
-                    {latitude: 53.56798790015924, longitude: 10.01579002384025},
-                    {latitude: 53.568336235318974, longitude: 10.01514575246664},
-                    {latitude: 53.56915851931115, longitude: 10.012861353952081},
-                    {latitude: 53.56984105443597, longitude: 10.010479214126283},
-                    {latitude: 53.57005279577809, longitude: 10.009921611296628},
-                    {latitude: 53.57399544001119, longitude: 10.007799533370484},
-                    {latitude: 53.57474924308066, longitude: 10.007461424966586},
-                    {latitude: 53.57494621454301, longitude: 10.00756987483465},
-                    {latitude: 53.57512045775465, longitude: 10.007754877546216},
-                    {latitude: 53.5753553061646, longitude: 10.008341782700153},
-                    {latitude: 53.575404548419705, longitude: 10.008660752917418},
-                    {latitude: 53.57564888137439, longitude: 10.011253245660438},
+                    {latitude: 53.575670358257526, longitude: 10.011269016037344},
+                    {latitude: 53.57966684750712, longitude: 10.008348550282223},
+                    {latitude: 53.580390971814474, longitude: 10.0054406304098},
+                    {latitude: 53.58081057254366, longitude: 10.002536264976749},
+                    {latitude: 53.58081057254404, longitude: 10.000747264164223},
+                    {latitude: 53.58037785922915, longitude: 9.9997202451673},
+                    {latitude: 53.579538645029295, longitude: 9.998582794078107},
+                    {latitude: 53.57837814166081, longitude: 9.99724656502614},
+                    
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                 {/*Bellevue*/}
+                 <Polyline
+                  coordinates={[
+                    {latitude: 53.57827685494789, longitude: 10.00940107360657},
+                    {latitude: 53.577071074441236, longitude: 10.005847217679072},
+                    {latitude: 53.577072021365055, longitude: 10.005032248805442},
+                    {latitude: 53.57734852353317, longitude: 10.0043097813006},
+                    {latitude: 53.57775191043593, longitude: 10.003920637657528},
+                    {latitude: 53.578318160681086, longitude: 10.0037771010587560},
+                    {latitude: 53.58071605491682, longitude: 10.003231722129508},
+                    
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                 {/*Mühlenkamp*/}
+                 <Polyline
+                  coordinates={[
+                    {latitude: 53.5796321529775, longitude: 10.013059422475214},
+                    {latitude: 53.58104601038832, longitude: 10.01193071207474},
+                    {latitude: 53.58169159386566, longitude: 10.01395809202547},
+                    {latitude: 53.582185838126655, longitude: 10.015453967927044},
                   ]}
 
                   strokeColor = 'blue'
@@ -539,6 +569,71 @@ export default Home = () => {
                   tappable = {true}
                   lineCap = 'round'
                 />
+                {/*Goldbekufer*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.58744196736017, longitude: 10.016971011688451},
+                    {latitude: 53.58525940585286, longitude: 10.012037129366883},
+                    {latitude: 53.58479399212026, longitude: 10.011036835393007},
+                    {latitude: 53.584581344482515, longitude: 10.010469100966965},
+                    {latitude: 53.58443690396653, longitude: 10.010306891119942},
+                    {latitude: 53.58443447987334, longitude: 10.010034354164148},
+                    {latitude: 53.584549237316935, longitude: 10.009999107561084},
+                    {latitude: 53.58546156635131, longitude: 10.0086851103388}
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Geibel*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.58548579477884, longitude: 10.014851020298174},
+                    {latitude: 53.586125862498264, longitude: 10.014148281554261},
+
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                 {/*Forsmann*/}
+                 <Polyline
+                  coordinates={[
+                    {latitude: 53.58553781845881, longitude: 10.012727829305986},
+                    {latitude: 53.58491525649883, longitude: 10.013342055151389},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Goldbekplatz*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.58443000328747, longitude: 10.010281941905882},
+                    {latitude: 53.58430078084127, longitude: 10.011522169616471},
+                    {latitude: 53.5842244617692, longitude: 10.011588705682344},
+                    {latitude: 53.58354988775865, longitude: 10.009741964455845},
+                    {latitude: 53.583646716882896, longitude: 10.009688859428735},
+                    {latitude: 53.58442922318671, longitude: 10.010054904799066},
+                    {latitude: 53.58442922318671, longitude: 10.010300246894068},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+
 
 
               </MapView>
