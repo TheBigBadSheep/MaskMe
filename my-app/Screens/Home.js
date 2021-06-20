@@ -301,11 +301,245 @@ export default Home = () => {
                   ]}
 
                   strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Heidi Kabel Platz*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55445977589822, longitude: 10.008051194837028},
+                    {latitude: 53.55437877507065, longitude: 10.006982075282732},
+                    {latitude: 53.55464939086548, longitude: 10.006390185906296},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Hbhf*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55250564834807, longitude: 10.008648781370013},
+                    {latitude: 53.55235447100425, longitude: 10.008622364151924},
+                    {latitude: 53.55221387678931, longitude: 10.008412004030395},
+                    {latitude: 53.55212795787248, longitude: 10.008078933837977},
+                    {latitude: 53.551898839908006, longitude: 10.00626896029233},
+                    {latitude: 53.55197174121449, longitude: 10.005953420104392},
+                    {latitude: 53.55253672208164, longitude: 10.00570799995214},
+                    {latitude: 53.55399209886635, longitude: 10.004051413991956},
+                    {latitude: 53.55475751844839, longitude: 10.006247047751273},
+                    {latitude: 53.55465338054462, longitude: 10.006369757822164}
+                  ]}
+
+                  strokeColor = 'blue'
                   strokeWidth = {3}
                   lineJoin = 'bevel'
                   tappable = {true}
                   lineCap = 'round'
                 />
+                {/*Mönckeberg*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55174896103052, longitude: 10.005527752804813},
+                    {latitude: 53.551333391789, longitude: 10.00219330248168},
+                    {latitude: 53.55083689640066, longitude: 9.99926515600658},
+                    {latitude: 53.550681503517474, longitude: 9.997255643733572},
+                    {latitude: 53.55063820403269, longitude: 9.995806083739213},
+                    {latitude: 53.55044869954976, longitude: 9.994437701573629},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Spital*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55100038399616, longitude: 10.000221037852201},
+                    {latitude: 53.5511123675454, longitude: 10.00027564228698},
+                    {latitude: 53.55126149409933, longitude: 10.000394949833908},
+                    {latitude: 53.55158736141031, longitude: 10.001134036857563},
+                    {latitude: 53.55160116929398, longitude: 10.001256443312679},
+                    {latitude: 53.552757919212986, longitude: 10.005242887111732},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Barkhof*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.551585315193746, longitude: 10.00123395814627},
+                    {latitude: 53.55121763181538, longitude: 10.001435911652754},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Gerhart Hauptmann*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.5517311887346, longitude: 9.998501093470187},
+                    {latitude: 53.55154977857238, longitude: 9.998702133936218},
+                    {latitude: 53.55122864688146, longitude: 9.999001798020075},
+                    {latitude: 53.55085877141988, longitude: 9.999307229231512},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Ida- Ehre*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55003098822024, longitude: 9.999257939454134},
+                    {latitude: 53.55037363914539, longitude: 9.999337171915151},
+                    {latitude: 53.550660456640955, longitude: 9.999348227608367},
+                    {latitude: 53.550843274409026, longitude: 9.999296634377936},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Lange Mühren*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55241547862794, longitude: 10.004251461674913},
+                    {latitude: 53.55228252185258, longitude: 10.004351981909188},
+                    {latitude: 53.55165378840961, longitude: 10.004697164587926},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Bergstraße*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.550641938097215, longitude: 9.995830170023543},
+                    {latitude: 53.55092399243936, longitude: 9.995468071820257},
+                    {latitude: 53.55159645340708, longitude: 9.99460440053372},
+                    {latitude: 53.551980484379925, longitude: 9.994599036112026},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Neumühlen / Große Elbstraße */}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.544451648354745, longitude: 9.942577923660632},
+                    {latitude: 53.54481930469194, longitude: 9.936072023105794},
+                    {latitude: 53.54467071455547, longitude: 9.928069792214886},
+                    {latitude: 53.54491555032277, longitude: 9.927255675090906},
+                    {latitude: 53.54436154828007, longitude: 9.923092226910391},
+                    {latitude: 53.544208718854314, longitude: 9.918542976581877},
+                    {latitude: 53.54445845425422, longitude: 9.914589922942726},
+                    {latitude: 53.5450936239327, longitude: 9.903314694499525},
+                    {latitude: 53.54561259996048, longitude: 9.89252425954931},
+                    {latitude: 53.54576545355824, longitude: 9.882950831847564},
+                    {latitude: 53.54793154377634, longitude: 9.867315250052236},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {8}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*An der Alster*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.56753970790602, longitude: 10.016388326838417},
+                    {latitude: 53.56571340264784, longitude: 10.016767793186396},
+                    {latitude: 53.56520864331895, longitude: 10.016906256152952},
+                    {latitude: 53.564354795207976, longitude: 10.016927713830356},
+                    {latitude: 53.56402344652965, longitude: 10.016916984994703},
+                    {latitude: 53.56243676013966, longitude: 10.015071625230666},
+                    {latitude: 53.560525010727574, longitude: 10.012443060456654},
+                    {latitude: 53.55947988450903, longitude: 10.0094926305602},
+                    {latitude: 53.557478778149395, longitude: 10.004310602825145},
+                    {latitude: 53.55583975854121, longitude: 10.001136947288044},
+                    
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Edward Rhein Ufer*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.56754060188977, longitude: 10.016382305478759},
+                    {latitude: 53.56798790015924, longitude: 10.01579002384025},
+                    {latitude: 53.568336235318974, longitude: 10.01514575246664},
+                    {latitude: 53.56915851931115, longitude: 10.012861353952081},
+                    {latitude: 53.56984105443597, longitude: 10.010479214126283},
+                    {latitude: 53.57005279577809, longitude: 10.009921611296628},
+                    {latitude: 53.57399544001119, longitude: 10.007799533370484},
+                    {latitude: 53.57474924308066, longitude: 10.007461424966586},
+                    {latitude: 53.57494621454301, longitude: 10.00756987483465},
+                    {latitude: 53.57512045775465, longitude: 10.007754877546216},
+                    {latitude: 53.5753553061646, longitude: 10.008341782700153},
+                    {latitude: 53.575404548419705, longitude: 10.008660752917418},
+                    {latitude: 53.57564888137439, longitude: 10.011253245660438},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                 {/*Krugkoppelbrücke*/}
+                 <Polyline
+                  coordinates={[
+                    {latitude: 53.56754060188977, longitude: 10.016382305478759},
+                    {latitude: 53.56798790015924, longitude: 10.01579002384025},
+                    {latitude: 53.568336235318974, longitude: 10.01514575246664},
+                    {latitude: 53.56915851931115, longitude: 10.012861353952081},
+                    {latitude: 53.56984105443597, longitude: 10.010479214126283},
+                    {latitude: 53.57005279577809, longitude: 10.009921611296628},
+                    {latitude: 53.57399544001119, longitude: 10.007799533370484},
+                    {latitude: 53.57474924308066, longitude: 10.007461424966586},
+                    {latitude: 53.57494621454301, longitude: 10.00756987483465},
+                    {latitude: 53.57512045775465, longitude: 10.007754877546216},
+                    {latitude: 53.5753553061646, longitude: 10.008341782700153},
+                    {latitude: 53.575404548419705, longitude: 10.008660752917418},
+                    {latitude: 53.57564888137439, longitude: 10.011253245660438},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+
 
               </MapView>
 
