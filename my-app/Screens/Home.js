@@ -57,6 +57,7 @@ export default Home = () => {
               <MapView
                 style={styles.map, StyleSheet.absoluteFillObject}
                 provider={PROVIDER_GOOGLE}
+                loadingEnabled
                 showsUserLocation={true}
                 initialRegion={{
                   latitude: 53.5502,
@@ -71,9 +72,9 @@ export default Home = () => {
                     latitude: 53.5,
                     longitude: 10,
                   }}
-                  onDragEnd={
+                  /*onDragEnd={
                     (e) => alert(JSON.stringify(e.nativeEvent.coordinate))
-                  }
+                  }*/
                   title={'Meep'}
                   description={'Moin Servus Moin'}
                 />
