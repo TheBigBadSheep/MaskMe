@@ -109,7 +109,7 @@ export default Home = () => {
                   lineCap = 'round'
                   
                 />
-                  {/*Ballindam*/}
+                  {/*Ballindam, Jungfernstieg, Lombarsbrücke*/}
                   <Polygon
                   coordinates={[
                     {latitude: 53.55199270657042, longitude: 9.99471128043142 },
@@ -138,6 +138,175 @@ export default Home = () => {
                   lineCap = 'round'
                   
                 />
+                 {/*Große Freiheit*/}
+                 <Polyline
+                  coordinates={[
+                    {latitude: 53.550115171491385, longitude: 9.9573875081496},
+                    {latitude: 53.55145097257658, longitude: 9.95783293337773}
+                    ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                  
+                />
+                {/*Hamburger Berg*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.54965353808731, longitude: 9.961293940914421},
+                    {latitude: 53.54990539493763, longitude: 9.961286750175182}
+                    ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Talstraße*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.54976329164392, longitude: 9.960099368422284},
+                    {latitude: 53.55119951608849, longitude: 9.96014543019871}
+                    ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Hans-Albers-Platz*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.54924365289789, longitude: 9.960896938129562},
+                    {latitude: 53.548620248246586, longitude: 9.961018174635164}
+                    ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Reeperbahn*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.54998432660257, longitude: 9.968189184248049},
+                    {latitude: 53.549993097274665, longitude: 9.967301112283495},
+                    {latitude: 53.54984210379161, longitude: 9.965742100400627}
+                    ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Schulterblatt*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.56179182048877,longitude: 9.962044686009706},
+                    {latitude: 53.56272856043343, longitude: 9.961060315330919},
+                    ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Alma Wartenberg*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55367608464345, longitude: 9.928860436872931},
+                    {latitude: 53.55432794089626, longitude: 9.92860444217286},
+                    {latitude: 53.55416219370066, longitude: 9.928250383256536},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Hohenesch*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55465218243033, longitude: 9.928883047088906},
+                    {latitude: 53.55469028313308, longitude: 9.928588611507738},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Ottenser Hauptstraße*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55223936923548, longitude: 9.932821749017172},
+                    {latitude: 53.552147332539754, longitude: 9.932044360856846},
+                    {latitude: 53.55208033507465, longitude: 9.931489517719456},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                 {/*Ottenser Hauptstraße Klein*/}
+                 <Polyline
+                  coordinates={[
+                    {latitude: 53.552081675025725, longitude: 9.931485006785888},
+                    {latitude: 53.55210311422539, longitude: 9.931216607062533},
+                    {latitude: 53.55209366204509, longitude: 9.930465599412424},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Bahnhof Altona*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.551508702616324, longitude: 9.936308527871184},
+                    {latitude: 53.5519308203195, longitude: 9.93663368105499},
+                    {latitude: 53.55243163247197, longitude: 9.937013026436098},
+                    {latitude: 53.55247098175304, longitude: 9.93616401535714},
+                    {latitude: 53.552553938110016, longitude: 9.93388741003505},
+                    {latitude: 53.5521340454889, longitude: 9.933717100389721},
+                    {latitude: 53.551567436782264, longitude: 9.93371710039908},
+                    {latitude: 53.551508702616324, longitude: 9.936308527871184},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {5}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+                {/*Kirchenalle*/}
+                <Polyline
+                  coordinates={[
+                    {latitude: 53.55245865384305, longitude: 10.008649972244692},
+                    {latitude: 53.55445065704137, longitude: 10.00810113259947},
+                    {latitude: 53.554973637881005, longitude: 10.00790337108021},
+                  ]}
+
+                  strokeColor = 'blue'
+                  strokeWidth = {3}
+                  lineJoin = 'bevel'
+                  tappable = {true}
+                  lineCap = 'round'
+                />
+
               </MapView>
 
               {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
