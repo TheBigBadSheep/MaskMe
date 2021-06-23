@@ -180,18 +180,40 @@ export default Home = () => {
                   title={'Stralsunder Straße'}
                   description={'Täglich von 8 Uhr bis 22 Uhr'}
                 />
-                {/*Ballindam, Jungfernstieg, Lombarsbrücke*/}
-                <Polygon
+                <Polyline
                   coordinates={[
+                    { latitude: 53.55224181570016, longitude: 10.009946818974388 },
+                    { latitude: 53.55206631771167, longitude: 10.008511201084675 },
+                   
+                  ]}
+
+                  strokeColor='blue'
+                  strokeWidth={5}
+                  lineJoin='bevel'
+                  tappable={true}
+                  lineCap='round'
+                />
+                {/*Ballindam*/}
+                <Polyline
+                coordinates={[
                     { latitude: 53.55199270657042, longitude: 9.99471128043142 },
                     { latitude: 53.552069107308114, longitude: 9.995048857348774 },
                     { latitude: 53.55545390427445, longitude: 10.000513201614362 },
                     { latitude: 53.55560908042299, longitude: 10.000597595837725 },
-                    { latitude: 53.55590749449631, longitude: 10.000408713531497 },
-                    { latitude: 53.55627275046821, longitude: 9.999596921457341 },
-                    { latitude: 53.55697460601956, longitude: 9.997177620343157 },
-                    { latitude: 53.557616769772665, longitude: 9.993962602179044 },
-                    { latitude: 53.557537991846296, longitude: 9.993343711158996 },
+                    
+                  ]}
+                  strokeColor='blue'
+                  strokeWidth={5}
+                  fillColor='lightblue'
+                  lineJoin='bevel'
+                  tappable={true}
+                  lineCap='round'
+                  />
+
+                {/* Jungfernstieg, NeuJungfernstieg*/}
+                <Polyline
+                  coordinates={[
+                    { latitude: 53.557553088419284, longitude: 9.993399400757035},
                     { latitude: 53.55736849944434, longitude: 9.992957908995056 },
                     { latitude: 53.55609847840613, longitude: 9.99224256744652 },
                     { latitude: 53.555007471249, longitude: 9.991290118310278 },
@@ -199,6 +221,7 @@ export default Home = () => {
                     { latitude: 53.55418621316441, longitude: 9.991065067049348 },
                     { latitude: 53.553848003179105, longitude: 9.991639828739862 },
                     { latitude: 53.55204379268658, longitude: 9.994536467638058 },
+                    
                   ]}
 
                   strokeColor='blue'
@@ -209,6 +232,27 @@ export default Home = () => {
                   lineCap='round'
 
                 />
+                {/*Lombarsbrücke*/}
+                <Polyline
+                  coordinates={[
+                    { latitude: 53.55560054751186, longitude: 10.000600667410314},
+                    { latitude: 53.55590749449631, longitude: 10.000408713531497 },
+                    { latitude: 53.55627275046821, longitude: 9.999596921457341 },
+                    { latitude: 53.55697460601956, longitude: 9.997177620343157 },
+                    { latitude: 53.557616769772665, longitude: 9.993962602179044 },
+                    { latitude: 53.557537991846296, longitude: 9.993343711158996 }
+                  ]}
+
+                  strokeColor='blue'
+                  strokeWidth={5}
+                  fillColor='lightblue'
+                  lineJoin='bevel'
+                  tappable={true}
+                  lineCap='round'
+
+                />
+
+
                 {//MARKER
                 }
                 {/*Große Freiheit*/}
@@ -668,9 +712,7 @@ export default Home = () => {
                     { latitude: 53.58479399212026, longitude: 10.011036835393007 },
                     { latitude: 53.584581344482515, longitude: 10.010469100966965 },
                     { latitude: 53.58443690396653, longitude: 10.010306891119942 },
-                    { latitude: 53.58443447987334, longitude: 10.010034354164148 },
-                    { latitude: 53.584549237316935, longitude: 10.009999107561084 },
-                    { latitude: 53.58546156635131, longitude: 10.0086851103388 }
+                   
                   ]}
 
                   strokeColor='blue'
@@ -725,6 +767,18 @@ export default Home = () => {
                   lineCap='round'
                 />
 
+                {/*Moortfurtweg*/}
+                <Polyline
+                coordinates={[ { latitude: 53.58443447987334, longitude: 10.010034354164148 },
+                  { latitude: 53.584549237316935, longitude: 10.009999107561084 },
+                  { latitude: 53.58546156635131, longitude: 10.0086851103388 }
+                ]}
+                strokeColor='blue'
+                strokeWidth={5}
+                lineJoin='bevel'
+                tappable={true}
+                lineCap='round'
+              />
 
 
               </MapView>
