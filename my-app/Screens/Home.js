@@ -36,7 +36,7 @@ export default Home = () => {
     if (isLocation) {
       locationText = "&lat=" + lat + "&lon=" + lng;
     } else if (searchText === "") {
-      Alert.alert("Invalid Location", "Please enter a correct city name", [{ title: "Ok" }]);
+      Alert.alert("Invalid Location", "Please enter a correct street name", [{ title: "Ok" }]);
     }
   };
 
@@ -48,7 +48,7 @@ export default Home = () => {
 
     try {
       const location = await Location.getCurrentPositionAsync({ timeout: 5000 });
-      searchHandler(true, location.coords.latitude, location.coords.longitude);
+      //searchHandler(true, location.coords.latitude, location.coords.longitude);
     } catch (err) {
       Alert.alert("Could not get location!", "Please try again later or enter city name.", [{ title: "Ok" }]);
     }
@@ -180,11 +180,12 @@ export default Home = () => {
                   title={'Stralsunder Straße'}
                   description={'Täglich von 8 Uhr bis 22 Uhr'}
                 />
+                {/*Steintorplatz*/}
                 <Polyline
                   coordinates={[
                     { latitude: 53.55224181570016, longitude: 10.009946818974388 },
                     { latitude: 53.55206631771167, longitude: 10.008511201084675 },
-                   
+
                   ]}
 
                   strokeColor='blue'
@@ -193,49 +194,44 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55215406670591,
+                    longitude: 10.009229010029532
+                  }}
+                  image={mask}
+                  title={'Steintorplatz'}
+                  description={'Einschließlich der angrenzenden öffentlichen Wege, Straßen und Plätze, abgegrenzt durch die Bahnüberführung der Straße Steintordamm, dem Gebäude des Museums für Kunst und Gewerbe, dem Gebäude des Zentralen Omnibusbahnhofs, dem Gebäude mit der Hausnummer Steindamm 2, dem Gebäude mit der Hausnummer Steindamm 1, den Gebäuden mit den Hausnummern Steintorplatz 3 und Kirchenallee 57 sowie dem Gebäude des Hauptbahnhofs, täglich von 8 Uhr bis 22 Uhr'}
+                />
                 {/*Ballindam*/}
                 <Polyline
-                coordinates={[
+                  coordinates={[
                     { latitude: 53.55199270657042, longitude: 9.99471128043142 },
                     { latitude: 53.552069107308114, longitude: 9.995048857348774 },
                     { latitude: 53.55545390427445, longitude: 10.000513201614362 },
                     { latitude: 53.55560908042299, longitude: 10.000597595837725 },
-                    
+
                   ]}
-                  strokeColor='blue'
+                  //strokeColor='blue'
                   strokeWidth={5}
-                  fillColor='lightblue'
+                  fillColor='lightcoral'
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
-                  />
-
-                {/* Jungfernstieg, NeuJungfernstieg*/}
-                <Polyline
-                  coordinates={[
-                    { latitude: 53.557553088419284, longitude: 9.993399400757035},
-                    { latitude: 53.55736849944434, longitude: 9.992957908995056 },
-                    { latitude: 53.55609847840613, longitude: 9.99224256744652 },
-                    { latitude: 53.555007471249, longitude: 9.991290118310278 },
-                    { latitude: 53.55456819565169, longitude: 9.991040954409078 },
-                    { latitude: 53.55418621316441, longitude: 9.991065067049348 },
-                    { latitude: 53.553848003179105, longitude: 9.991639828739862 },
-                    { latitude: 53.55204379268658, longitude: 9.994536467638058 },
-                    
-                  ]}
-
-                  strokeColor='blue'
-                  strokeWidth={5}
-                  fillColor='lightblue'
-                  lineJoin='bevel'
-                  tappable={true}
-                  lineCap='round'
-
                 />
-                {/*Lombarsbrücke*/}
+                <Marker
+                  coordinate={{
+                    latitude: 53.553761505791286,
+                    longitude: 9.997781029481569
+                  }}
+                  image={mask}
+                  title={'Ballindamm'}
+                  description={'Im räumlichen Bereich vor dem Gebäude mit der Hausnummer 40, abgegrenzt durch die Straßen Ballindamm und Bergstraße, täglich von 10 Uhr bis 20 Uhr'}
+                />
+                {/*Lombarsbrücke}
                 <Polyline
                   coordinates={[
-                    { latitude: 53.55560054751186, longitude: 10.000600667410314},
+                    { latitude: 53.55560054751186, longitude: 10.000600667410314 },
                     { latitude: 53.55590749449631, longitude: 10.000408713531497 },
                     { latitude: 53.55627275046821, longitude: 9.999596921457341 },
                     { latitude: 53.55697460601956, longitude: 9.997177620343157 },
@@ -245,16 +241,12 @@ export default Home = () => {
 
                   strokeColor='blue'
                   strokeWidth={5}
-                  fillColor='lightblue'
+                  //fillColor='lightblue'
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
 
-                />
-
-
-                {//MARKER
-                }
+                />*/}
                 {/*Große Freiheit*/}
                 <Polyline
                   coordinates={[
@@ -313,6 +305,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.5504814038662,
+                    longitude: 9.960122399310496
+                  }}
+                  image={mask}
+                  title={'Talstraße'}
+                  description={'Im räumlichen Bereich der Hausnummern 1 bis 36, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag'}
+                />
                 {/*Hans-Albers-Platz*/}
                 <Polyline
                   coordinates={[
@@ -325,6 +326,15 @@ export default Home = () => {
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
+                />
+                <Marker
+                  coordinate={{
+                    latitude: 53.54893195057224,
+                    longitude: 9.960957556382363
+                  }}
+                  image={mask}
+                  title={'Hans-Albers-Platz'}
+                  description={'Einschließlich der Friedrichstraße im räumlichen Bereich zwischen und einschließlich den Hausnummern 11 beziehungsweise 24 bis 21 beziehungsweise 28, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag'}
                 />
                 {/*Reeperbahn*/}
                 <Polyline
@@ -340,6 +350,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.549939842556284,
+                    longitude: 9.967077465644058
+                  }}
+                  image={mask}
+                  title={'Reeperbahn'}
+                  description={'Einschließlich der Plätze Nobistor und Spielbudenplatz, abgegrenzt durch den Millerntorplatz, die Straße Zirkusweg, die Holstenstraße und den Finkenpark sowie in der Straße Spielbudenplatz im räumlichen Bereich der Hausnummern 1 bis 31, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag'}
+                />
                 {/*Schulterblatt*/}
                 <Polyline
                   coordinates={[
@@ -353,7 +372,16 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
-                {/*Alma Wartenberg*/}
+                <Marker
+                  coordinate={{
+                    latitude: 53.5622601904611,
+                    longitude: 9.961552500670312
+                  }}
+                  image={mask}
+                  title={'Schulterblatt'}
+                  description={'Im räumlichen Bereich zwischen den Straßen Susannenstraße und Rosenhofstraße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 12 Uhr bis 4 Uhr am Folgetag'}
+                />
+                {/*Alma-Wartenberg-Platz*/}
                 <Polyline
                   coordinates={[
                     { latitude: 53.55367608464345, longitude: 9.928860436872931 },
@@ -367,6 +395,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55400201276986,
+                    longitude: 9.928732439522896
+                  }}
+                  image={mask}
+                  title={'Alma-Wartenberg-Platz'}
+                  description={'Einschließlich der Bahrenfelder Straße im räumlichen Bereich zwischen und einschließlich den Hausnummern 135 beziehungsweise 146 und den Hausnummern 183 beziehungsweise 188, der Kleinen Rainstraße im räumlichen Bereich bis zu und einschließlich den Hausnummern 3 beziehungsweise 6, der Nöltingstraße im räumlichen Bereich bis zu und einschließlich den Hausnummern 5 beziehungsweise 12, der Friedensallee im räumlichen Bereich bis zu und einschließlich den Hausnummern 7 beziehungsweise 14 sowie der Bergiusstraße im räumlichen Bereich bis zu der Hausnummer 7, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag'}
+                />
                 {/*Hohenesch*/}
                 <Polyline
                   coordinates={[
@@ -379,6 +416,15 @@ export default Home = () => {
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
+                />
+                <Marker
+                  coordinate={{
+                    latitude: 53.5546712327817,
+                    longitude: 9.928735829298322
+                  }}
+                  image={mask}
+                  title={'Hohenesch'}
+                  description={'Im räumlichen Bereich von und einschließlich der Hausnummern 1 beziehungsweise 6 bis zur Bahrenfelder Straße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag'}
                 />
                 {/*Ottenser Hauptstraße*/}
                 <Polyline
@@ -408,7 +454,16 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
-                {/*Bahnhof Altona*/}
+                <Marker
+                  coordinate={{
+                    latitude: 53.552081005050184,
+                    longitude: 9.931487262252672
+                  }}
+                  image={mask}
+                  title={'Ottenser Hauptstraße'}
+                  description={'Im räumlichen Bereich der Hausnummern 2 bis 27, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
+                />
+                {/*Umfeld des Bahnhofs Altona*/}
                 <Polyline
                   coordinates={[
                     { latitude: 53.551508702616324, longitude: 9.936308527871184 },
@@ -427,6 +482,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55249755993153,
+                    longitude: 9.935425712696095
+                  }}
+                  image={mask}
+                  title={'Umfeld des Bahnhofs Altona'}
+                  description={'Im räumlichen Bereich der Präsident-​Krahn-​Straße zwischen und einschließlich der Hausnummern 1 und 8 beidseitig, Max-​Brauer-​Allee zwischen und einschließlich der Hausnummern 51 und 53 auf der zum Bahnhof gelegenen Gehwegseite (westlich), zwischen und einschließlich der Gebäude Paul-​Nevermann-​Platz 5 und Ottenser Hauptstraße 1a beidseitig, zwischen und einschließlich der Gebäude Ottenser Hauptstraße 1 und Scheel-​Plessen-​Straße 9, zwischen und einschließlich der Gebäude Scheel-​Plessen-​Straße 9 bis Paul-​Nevermann-​Platz 19, montags bis samstags, jeweils von 8 Uhr bis 22 Uhr'}
+                />
                 {/*Kirchenalle*/}
                 <Polyline
                   coordinates={[
@@ -441,6 +505,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55345465544221,
+                    longitude: 10.00837555242208
+                  }}
+                  image={mask}
+                  title={'Kirchenallee'}
+                  description={'Im räumlichen Bereich zwischen Steintorplatz, Ernst-​Merck-​Straße, Hachmannplatz und Heidi-​Kabel-​Platz täglich von 8 Uhr bis 22 Uhr'}
+                />
                 {/*Heidi-Kabel-Platz*/}
                 <Polyline
                   coordinates={[
@@ -454,6 +527,15 @@ export default Home = () => {
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
+                />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55437898061145,
+                    longitude: 10.006990152008685
+                  }}
+                  image={mask}
+                  title={'Heidi-Kabel-Platz'}
+                  description={'Im räumlichen Bereich vor dem Gebäude Ernst-​Merck-​Straße 9, der Kirchenallee und dem Hachmannplatz täglich von 8 Uhr bis 22 Uhr'}
                 />
                 {/*Hbf*/}
                 <Polyline
@@ -493,7 +575,7 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
-                {/*Spitaler Straße*/}
+                {/*Spitalerstraße*/}
                 <Polyline
                   coordinates={[
                     { latitude: 53.55100038399616, longitude: 10.000221037852201 },
@@ -704,6 +786,27 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                {/* Jungfernstieg, NeuJungfernstieg*/}
+                <Polyline
+                  coordinates={[
+                    { latitude: 53.557553088419284, longitude: 9.993399400757035 },
+                    { latitude: 53.55736849944434, longitude: 9.992957908995056 },
+                    { latitude: 53.55609847840613, longitude: 9.99224256744652 },
+                    { latitude: 53.555007471249, longitude: 9.991290118310278 },
+                    { latitude: 53.55456819565169, longitude: 9.991040954409078 },
+                    { latitude: 53.55418621316441, longitude: 9.991065067049348 },
+                    { latitude: 53.553848003179105, longitude: 9.991639828739862 },
+                    { latitude: 53.55204379268658, longitude: 9.994536467638058 },
+
+                  ]}
+
+                  strokeColor='blue'
+                  strokeWidth={5}
+                  fillColor='lightblue'
+                  lineJoin='bevel'
+                  tappable={true}
+                  lineCap='round'
+                />
                 {/*Goldbekufer*/}
                 <Polyline
                   coordinates={[
@@ -712,7 +815,7 @@ export default Home = () => {
                     { latitude: 53.58479399212026, longitude: 10.011036835393007 },
                     { latitude: 53.584581344482515, longitude: 10.010469100966965 },
                     { latitude: 53.58443690396653, longitude: 10.010306891119942 },
-                   
+
                   ]}
 
                   strokeColor='blue'
@@ -769,18 +872,16 @@ export default Home = () => {
 
                 {/*Moortfurtweg*/}
                 <Polyline
-                coordinates={[ { latitude: 53.58443447987334, longitude: 10.010034354164148 },
+                  coordinates={[{ latitude: 53.58443447987334, longitude: 10.010034354164148 },
                   { latitude: 53.584549237316935, longitude: 10.009999107561084 },
                   { latitude: 53.58546156635131, longitude: 10.0086851103388 }
-                ]}
-                strokeColor='blue'
-                strokeWidth={5}
-                lineJoin='bevel'
-                tappable={true}
-                lineCap='round'
-              />
-
-
+                  ]}
+                  strokeColor='blue'
+                  strokeWidth={5}
+                  lineJoin='bevel'
+                  tappable={true}
+                  lineCap='round'
+                />
               </MapView>
 
               {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
