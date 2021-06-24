@@ -1255,6 +1255,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap="round"
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.58104601038832,
+                    longitude: 10.01193071207474
+                  }}
+                  image={mask}
+                  title={'Mühlenkamp'}
+                  description={'Im räumlichen Bereich der Hausnummern 1 bis 21 und 2 bis 18, zwischen Körnerstraße und Gertigstraße, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr'}
+                />
                 {/* Jungfernstieg, NeuJungfernstieg*/}
                 <Polyline
                   coordinates={[
