@@ -48,11 +48,11 @@ export default List = () => {
 
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Große Freiheit: </Text>Im räumlichen Bereich von der Hausnummer 1 bis zur Hausnummer 47, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Große Freiheit: </Text>Im räumlichen Bereich von der Hausnummer 1 bis zur Hausnummer 47, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Hamburger Berg: </Text>Im räumlichen Bereich der Hausnummern 1 bis 39, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Hamburger Berg: </Text>Im räumlichen Bereich der Hausnummern 1 bis 39, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
@@ -64,11 +64,11 @@ export default List = () => {
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Reeperbahn: </Text>Einschließlich der Plätze Nobistor und Spielbudenplatz, abgegrenzt durch den Millerntorplatz, die Straße Zirkusweg, die Holstenstraße und den Finkenpark sowie in der Straße Spielbudenplatz im räumlichen Bereich der Hausnummern 1 bis 31, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Reeperbahn: </Text>Einschließlich der Plätze Nobistor und Spielbudenplatz, abgegrenzt durch den Millerntorplatz, die Straße Zirkusweg, die Holstenstraße und den Finkenpark sowie in der Straße Spielbudenplatz im räumlichen Bereich der Hausnummern 1 bis 31, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Schulterblatt: </Text>Im räumlichen Bereich zwischen den Straßen Susannenstraße und Rosenhofstraße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 12 Uhr bis 4 Uhr am Folgetag</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Schulterblatt: </Text>Im räumlichen Bereich zwischen den Straßen Susannenstraße und Rosenhofstraße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 12 Uhr bis 4 Uhr am Folgetag</Text>
                                         </View>
 
                                         <View style={styles.listPointBox}>
@@ -77,7 +77,7 @@ export default List = () => {
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Hohenesch: </Text>Im räumlichen Bereich von und einschließlich der Hausnummern 1 beziehungsweise 6 bis zur Bahrenfelder Straße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Hohenesch: </Text>Im räumlichen Bereich von und einschließlich der Hausnummern 1 beziehungsweise 6 bis zur Bahrenfelder Straße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
@@ -101,11 +101,11 @@ export default List = () => {
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Steintordamm: </Text>Im räumlichen Bereich der Steintorbrücke zwischen Steintorplatz und Steintorwall täglich von 8 Uhr bis 22 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Steintordamm: </Text>Im räumlichen Bereich der Steintorbrücke zwischen Steintorplatz und Steintorwall täglich von 8 Uhr bis 22 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Steintorwall: </Text>Im räumlichen Bereich zwischen Mönckebergstraße 1 und Georgsplatz/Ernst-​Merck-​Straße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Steintorwall: </Text>Im räumlichen Bereich zwischen Mönckebergstraße 1 und Georgsplatz/Ernst-​Merck-​Straße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
@@ -117,7 +117,7 @@ export default List = () => {
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Barkhof: </Text>Im räumlichen Bereich zwischen Spitalerstraße und Mönckebergstraße, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Barkhof: </Text>Im räumlichen Bereich zwischen Spitalerstraße und Mönckebergstraße, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
@@ -129,7 +129,7 @@ export default List = () => {
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Lange Mühren: </Text>Im räumlichen Bereich zwischen Spitalerstraße und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Lange Mühren: </Text>Im räumlichen Bereich zwischen Spitalerstraße und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
@@ -137,11 +137,11 @@ export default List = () => {
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Neumühlen: </Text>Im räumlichen Bereich ab der Einmündung Kaistraße/Große Elbstraße in westlicher Richtung, einschließlich dem wasserseitigen Westkai sowie dem Anleger Neumühlen/Museumshafen, der Großen Elbstraße im räumlichen Bereich zwischen Hausnummer 281 (Fahrradstraße, einschließlich Kehre) und Hausnummer 143a (Dockland/Van-​der-​Smissen-​Straße) einschließlich dem parallel verlaufenden wasserseitigen Weg sowie dem Ostkai, der Straße Övelgönne einschließlich dem räumlichen Bereich um das Lüfterbauwerk, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Neumühlen: </Text>Im räumlichen Bereich ab der Einmündung Kaistraße/Große Elbstraße in westlicher Richtung, einschließlich dem wasserseitigen Westkai sowie dem Anleger Neumühlen/Museumshafen, der Großen Elbstraße im räumlichen Bereich zwischen Hausnummer 281 (Fahrradstraße, einschließlich Kehre) und Hausnummer 143a (Dockland/Van-​der-​Smissen-​Straße) einschließlich dem parallel verlaufenden wasserseitigen Weg sowie dem Ostkai, der Straße Övelgönne einschließlich dem räumlichen Bereich um das Lüfterbauwerk, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straßen An der Alster und Ferdinandstor: </Text>Von der Straße Schwanenwik bis zur Bahnbrücke (Ferdinandstor) sowie auf der Kennedybrücke (einschließlich Brückenbauwerk und der angrenzenden Grünanlage bis zu den Bahngleisen) und der Gurlittinsel; jeweils die wasserseitig gelegenen Fuß- und Radwege der öffentlichen Grünanlagen einschließlich des Uferrandes, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>An der Alster und Ferdinandstor: </Text>Von der Straße Schwanenwik bis zur Bahnbrücke (Ferdinandstor) sowie auf der Kennedybrücke (einschließlich Brückenbauwerk und der angrenzenden Grünanlage bis zu den Bahngleisen) und der Gurlittinsel; jeweils die wasserseitig gelegenen Fuß- und Radwege der öffentlichen Grünanlagen einschließlich des Uferrandes, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
@@ -149,19 +149,19 @@ export default List = () => {
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Krugkoppelbrücke: </Text>Straße Fernsicht bis zu und einschließlich Hausnummern 1 bis 7 einschließlich der Straße Leinpfad bis zu und einschließlich Hausnummer 1 sowie der Fernsichtbrücke bis zur Einmündung Bellevue, der Einmündung Fernsichtbrücke, in der Straße Bellevue bis zu und einschließlich Hausnummern 47 bis 1 einschließlich der Sierichstraße bis zu und einschließlich Hausnummer 4 jeweils einschließlich der angrenzenden öffentlichen Grünanlagen bis zum Uferrand, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Krugkoppelbrücke: </Text>Straße Fernsicht bis zu und einschließlich Hausnummern 1 bis 7 einschließlich der Straße Leinpfad bis zu und einschließlich Hausnummer 1 sowie der Fernsichtbrücke bis zur Einmündung Bellevue, der Einmündung Fernsichtbrücke, in der Straße Bellevue bis zu und einschließlich Hausnummern 47 bis 1 einschließlich der Sierichstraße bis zu und einschließlich Hausnummer 4 jeweils einschließlich der angrenzenden öffentlichen Grünanlagen bis zum Uferrand, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Mühlenkamp: </Text>Im räumlichen Bereich der Hausnummern 1 bis 21 und 2 bis 18, zwischen Körnerstraße und Gertigstraße, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Mühlenkamp: </Text>Im räumlichen Bereich der Hausnummern 1 bis 21 und 2 bis 18, zwischen Körnerstraße und Gertigstraße, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Jungfernstieg: </Text>Von Hausnummern 1 bis 32 einschließlich dem Alsteranleger, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 20 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Jungfernstieg: </Text>Von Hausnummern 1 bis 32 einschließlich dem Alsteranleger, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 20 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Straße Goldbekufer: </Text>Zwischen Barmbeker Straße und Goldbekplatz/Moorfurthweg, sonnabends in der Zeit von 8 Uhr bis 15 Uhr</Text>
+                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Goldbekufer: </Text>Zwischen Barmbeker Straße und Goldbekplatz/Moorfurthweg, sonnabends in der Zeit von 8 Uhr bis 15 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
