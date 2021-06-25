@@ -12,7 +12,7 @@ export default List = () => {
 
                         {/* upperContainer ist der mit Logo und Hinweisbalken */}
                         <View style={styles.upperContainer}>
-                                <Image style={{ height: '27%', width: '14%', alignSelf: 'flex-start', marginLeft: 20, marginBottom: 20, }} source={require('../Design/pics/apple.png')} />
+                                <Image style={{ height: '32%', width: '12%', alignSelf: 'flex-start', marginLeft: 20, marginBottom: 20, }} source={require('../Design/pics/logo.png')} />
                                 <Text style={{ flex: 1, fontFamily: 'Lobster_400Regular', color: '#B2E0E6', fontSize: 50, fontWeight: 'normal', alignSelf: 'flex-start', marginLeft: '4%', paddingBottom: 10, }}>Liste</Text>
                                 <View style={styles.textbalken}>
                                         <Text style={styles.weisserText}>Maskenpflichtige Orte, Straßen und Ausnahmen, weitergehend als Beförderungsmittel</Text>
@@ -32,7 +32,7 @@ export default List = () => {
                                         </View>
 
 
-                                        {/*Jetzt kommt 36 mal das gleiche nur mit anderen Punkten */}
+                                        {/*Jetzt kommt 35 mal das gleiche nur mit anderen Punkten */}
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                                                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Stralsunder Straße: </Text>Täglich von 8 Uhr bis 22 Uhr</Text>
@@ -45,7 +45,6 @@ export default List = () => {
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                                                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Ballindamm: </Text>Im räumlichen Bereich vor dem Gebäude mit der Hausnummer 40, abgegrenzt durch die Straßen Ballindamm und Bergstraße, täglich von 10 Uhr bis 20 Uhr</Text>
                                         </View>
-
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                                                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Große Freiheit: </Text>Im räumlichen Bereich von der Hausnummer 1 bis zur Hausnummer 47, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
@@ -70,7 +69,6 @@ export default List = () => {
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                                                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Schulterblatt: </Text>Im räumlichen Bereich zwischen den Straßen Susannenstraße und Rosenhofstraße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 12 Uhr bis 4 Uhr am Folgetag</Text>
                                         </View>
-
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                                                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Alma-​Wartenberg-​Platz: </Text>Einschließlich der Bahrenfelder Straße im räumlichen Bereich zwischen und einschließlich den Hausnummern 135 beziehungsweise 146 und den Hausnummern 183 beziehungsweise 188, der Kleinen Rainstraße im räumlichen Bereich bis zu und einschließlich den Hausnummern 3 beziehungsweise 6, der Nöltingstraße im räumlichen Bereich bis zu und einschließlich den Hausnummern 5 beziehungsweise 12, der Friedensallee im räumlichen Bereich bis zu und einschließlich den Hausnummern 7 beziehungsweise 14 sowie der Bergiusstraße im räumlichen Bereich bis zu der Hausnummer 7, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag</Text>
@@ -94,10 +92,6 @@ export default List = () => {
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                                                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Heidi-​Kabel-​Platz: </Text>Im räumlichen Bereich vor dem Gebäude Ernst-​Merck-​Straße 9, der Kirchenallee und dem Hachmannplatz täglich von 8 Uhr bis 22 Uhr</Text>
-                                        </View>
-                                        <View style={styles.listPointBox}>
-                                                <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
-                                                <Text style={styles.listText}><Text style={styles.listTextBeginning}>Hachmannplatz: </Text>Im räumlichen Bereich vor dem Hauptbahnhof, abgegrenzt vom Steintorplatz, der Kirchenallee und dem Heidi-​Kabel-​Platz täglich von 8 Uhr bis 22 Uhr</Text>
                                         </View>
                                         <View style={styles.listPointBox}>
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
@@ -179,7 +173,6 @@ export default List = () => {
                                                 <Ionicons name="arrow-forward-outline" size={22} color='#B2E0E6' />
                                                 <Text style={styles.listText}><Text style={styles.listTextBeginning}>Moorfurthweg: </Text>Sonnabends in der Zeit von 8 Uhr bis 15 Uhr</Text>
                                         </View>
-
                                         <View style={styles.listPointBoxHinweis}>
                                                 <Ionicons name="alert-circle-outline" size={22} style={styles.listIcons} />
                                                 <Text style={styles.listText}><Text style={styles.listHinweis}>Bitte beachte: </Text>Die Polizei kann im Einzelfall auf öffentlichen Wegen, Straßen oder Plätzen eine räumlich begrenzte Maskenpflicht anordnen, wenn dies aus Infektionsschutzgründen erforderlich ist. Dies ist insbesondere der Fall, wenn das Abstandsgebot durch einen erheblichen Teil der anwesenden Personen nicht eingehalten wird oder aufgrund der räumlichen Verhältnisse oder der Anzahl der anwesenden Personen nicht eingehalten werden kann.</Text>

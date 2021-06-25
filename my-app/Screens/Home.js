@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import {
   TextInput,
   Text,
-  KeyboardAvoidingView,
   View,
   Image,
   ImageBackground,
@@ -20,7 +19,6 @@ import MapView, {
   Marker,
   PROVIDER_GOOGLE,
   Polyline,
-  Polygon,
 } from "react-native-maps";
 
 import { useFonts, Lobster_400Regular } from "@expo-google-fonts/lobster";
@@ -47,7 +45,7 @@ export default Home = () => {
     Lobster_400Regular,
   });
 
-  const mask = require("../Design/Icons/mask3.png");
+  const mask = require("../Design/Icons/mask2.png");
 
   /*
   const searchHandler = async (isLocation, lat, lng) => {
@@ -116,13 +114,13 @@ export default Home = () => {
           <View style={styles.upperContainer}>
             <Image
               style={{
-                height: "27%",
-                width: "14%",
+                height: "42%",
+                width: "12%",
                 alignSelf: "flex-start",
                 marginLeft: 20,
-                marginBottom: 20,
+                marginBottom: 0,
               }}
-              source={require("../Design/pics/apple.png")}
+              source={require("../Design/pics/logo.png")}
             />
 
             {/**Die Header haben ihren Style immer direkt definiert, nicht im Stylesheet, wegen der custom Font. */}
@@ -135,15 +133,14 @@ export default Home = () => {
                 fontWeight: "normal",
                 alignSelf: "flex-start",
                 marginLeft: "4%",
-                paddingBottom: 10,
+                paddingBottom: 15,
               }}
             >
               Hinweis
             </Text>
             <View style={styles.textbalken}>
               <Text style={styles.weisserText}>
-                In Bussen, Bahnen und an Haltestellen des HVV gilt eine
-                FFP2-Maskenpflicht
+                In Bussen, Bahnen und an Haltestellen des HVV gilt eine Maskenpflicht
               </Text>
             </View>
           </View>
@@ -151,8 +148,6 @@ export default Home = () => {
           {/* MittlererContainer ist die Map und Searchbar */}
           <View style={styles.middleContainer}>
             <View style={(styles.placeforMap, StyleSheet.absoluteFillObject)}>
-              {/*Die Map hab ich einfach nur als Bild eingesetzt, als Platzhalter. Hier muss dann irgendwie Maps oder so rein 
-            <ImageBackground source={require('../Design/pics/map.png')} style={styles.map}>*/}
               <MapView
                 style={(styles.map, StyleSheet.absoluteFillObject)}
                 provider={PROVIDER_GOOGLE}
@@ -164,7 +159,7 @@ export default Home = () => {
                   latitude: 53.5502,
                   longitude: 9.992,
                   latitudeDelta: 0.1,
-                  longitudeDelta: 0.05, //am Ende zurück auf ca. 0.05 stellen
+                  longitudeDelta: 0.05,
                 }}
               >
                 {/*Steindamm*/}
@@ -552,7 +547,7 @@ export default Home = () => {
                   title={'Heidi-Kabel-Platz'}
                   description={'Im räumlichen Bereich vor dem Gebäude Ernst-​Merck-​Straße 9, der Kirchenallee und dem Hachmannplatz täglich von 8 Uhr bis 22 Uhr'}
                 />
-                {/*Hbf*/}
+                {/*Hbf (Steintordamm & Steintorwall*/}
                 <Polyline
                   coordinates={[
                     { latitude: 53.55250564834807, longitude: 10.008648781370013 },
@@ -573,6 +568,26 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                {/*Marker Steintordamm*/}
+                <Marker
+                  coordinate={{
+                    latitude: 53.55201339889024,
+                    longitude: 10.007173947065153
+                  }}
+                  image={mask}
+                  title={'Steintordamm'}
+                  description={'Im räumlichen Bereich der Steintorbrücke zwischen Steintorplatz und Steintorwall täglich von 8 Uhr bis 22 Uhr'}
+                />
+                {/*Marker Steintorwall*/}
+                <Marker
+                  coordinate={{
+                    latitude: 53.553264410474,
+                    longitude: 10.004879706972048
+                  }}
+                  image={mask}
+                  title={'Steintorwall'}
+                  description={'Im räumlichen Bereich zwischen Mönckebergstraße 1 und Georgsplatz/Ernst-​Merck-​Straße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
+                />
                 {/*Mönckebergstraße*/}
                 <Polyline
                   coordinates={[
@@ -590,6 +605,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55108514409483,
+                    longitude: 10.00072922924413
+                  }}
+                  image={mask}
+                  title={'Mönckebergstraße'}
+                  description={'Im räumlichen Bereich der Hausnummern 1 bis 31 zwischen Glockengießerwall/Steintorwall und Rathausmarkt einschließlich der Tunnelanlage zum Hauptbahnhof montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
+                />
                 {/*Spitalerstraße*/}
                 <Polyline
                   coordinates={[
@@ -606,6 +630,15 @@ export default Home = () => {
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
+                />
+                <Marker
+                  coordinate={{
+                    latitude: 53.551986752600314,
+                    longitude: 10.002585257912363
+                  }}
+                  image={mask}
+                  title={'Spitalerstraße'}
+                  description={'Im räumlichen Bereich zwischen Steintorwall und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
                 />
                 {/*Barkhof*/}
                 <Polyline
@@ -643,6 +676,15 @@ export default Home = () => {
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
+                />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55122864688146,
+                    longitude: 9.999001798020075
+                  }}
+                  image={mask}
+                  title={'Gerhart-Hauptmann-Platz'}
+                  description={'Im räumlichen Bereich zwischen Mönckebergstraße und Rosenstraße beziehungsweise Kleine Rosenstraße, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
                 />
                 {/*Ida-Ehre-Platz*/}
                 <Polyline
