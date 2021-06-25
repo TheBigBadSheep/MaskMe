@@ -47,6 +47,8 @@ export default Home = () => {
 
   const mask = require("../Design/Icons/mask2.png");
 
+  const lineColor = "blue"
+
   /*
   const searchHandler = async (isLocation, lat, lng) => {
     let locationText = currentText;
@@ -171,10 +173,9 @@ export default Home = () => {
                     { latitude: 53.55236311964756, longitude: 10.00993718354813 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -194,10 +195,9 @@ export default Home = () => {
                     { latitude: 53.554437580720325, longitude: 10.012818917400187 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -217,10 +217,9 @@ export default Home = () => {
 
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -241,11 +240,10 @@ export default Home = () => {
                     { latitude: 53.55560908042299, longitude: 10.000597595837725 },
 
                   ]}
-                  //strokeColor='blue'
+                  //strokeColor={lineColor}
                   strokeWidth={5}
                   fillColor='lightcoral'
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -264,10 +262,9 @@ export default Home = () => {
                     { latitude: 53.55145097257658, longitude: 9.95783293337773 }
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
 
                 />
@@ -287,10 +284,9 @@ export default Home = () => {
                     { latitude: 53.54990539493763, longitude: 9.961286750175182 }
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -309,10 +305,9 @@ export default Home = () => {
                     { latitude: 53.55119951608849, longitude: 9.96014543019871 }
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -331,10 +326,9 @@ export default Home = () => {
                     { latitude: 53.548620248246586, longitude: 9.961018174635164 }
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -354,10 +348,9 @@ export default Home = () => {
                     { latitude: 53.54984210379161, longitude: 9.965742100400627 }
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -376,10 +369,9 @@ export default Home = () => {
                     { latitude: 53.56272856043343, longitude: 9.961060315330919 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -399,10 +391,9 @@ export default Home = () => {
                     { latitude: 53.55416219370066, longitude: 9.928250383256536 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -421,10 +412,9 @@ export default Home = () => {
                     { latitude: 53.55469028313308, longitude: 9.928588611507738 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -444,10 +434,9 @@ export default Home = () => {
                     { latitude: 53.55208033507465, longitude: 9.931489517719456 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 {/*Ottenser Hauptstraße Klein*/}
@@ -458,10 +447,9 @@ export default Home = () => {
                     { latitude: 53.55209366204509, longitude: 9.930465599412424 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -486,10 +474,9 @@ export default Home = () => {
                     { latitude: 53.551508702616324, longitude: 9.936308527871184 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -509,10 +496,9 @@ export default Home = () => {
                     { latitude: 53.554973637881005, longitude: 10.00790337108021 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -532,10 +518,9 @@ export default Home = () => {
                     { latitude: 53.55464939086548, longitude: 10.006390185906296 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -562,10 +547,9 @@ export default Home = () => {
                     { latitude: 53.55465338054462, longitude: 10.006369757822164 }
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 {/*Marker Steintordamm*/}
@@ -599,10 +583,9 @@ export default Home = () => {
                     { latitude: 53.55044869954976, longitude: 9.994437701573629 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -625,10 +608,9 @@ export default Home = () => {
                     { latitude: 53.552757919212986, longitude: 10.005242887111732 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -647,10 +629,9 @@ export default Home = () => {
                     { latitude: 53.55121763181538, longitude: 10.001435911652754 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -671,10 +652,9 @@ export default Home = () => {
                     { latitude: 53.55085877141988, longitude: 9.999307229231512 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -695,10 +675,9 @@ export default Home = () => {
                     { latitude: 53.550843274409026, longitude: 9.999296634377936 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -718,10 +697,9 @@ export default Home = () => {
                     { latitude: 53.55165378840961, longitude: 10.004697164587926 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -742,10 +720,9 @@ export default Home = () => {
                     { latitude: 53.551980484379925, longitude: 9.994599036112026 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -773,10 +750,9 @@ export default Home = () => {
                     { latitude: 53.54793154377634, longitude: 9.867315250052236 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={8}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -803,10 +779,9 @@ export default Home = () => {
                     { latitude: 53.55583975854121, longitude: 10.001136947288044 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -836,10 +811,9 @@ export default Home = () => {
                     { latitude: 53.57564888137439, longitude: 10.011253245660438 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -865,10 +839,9 @@ export default Home = () => {
 
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 {/*Bellevue (gehört zur Krugkoppelbrücke*/}
@@ -884,10 +857,9 @@ export default Home = () => {
 
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -908,10 +880,9 @@ export default Home = () => {
                     { latitude: 53.582185838126655, longitude: 10.015453967927044 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -932,11 +903,10 @@ export default Home = () => {
                     { latitude: 53.55204379268658, longitude: 9.994536467638058 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   //fillColor='lightblue'
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -959,10 +929,9 @@ export default Home = () => {
 
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -982,10 +951,9 @@ export default Home = () => {
 
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -1004,10 +972,9 @@ export default Home = () => {
                     { latitude: 53.58491525649883, longitude: 10.013342055151389 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -1031,10 +998,9 @@ export default Home = () => {
                     { latitude: 53.58442922318671, longitude: 10.010300246894068 },
                   ]}
 
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={3}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
@@ -1052,10 +1018,9 @@ export default Home = () => {
                   { latitude: 53.584549237316935, longitude: 10.009999107561084 },
                   { latitude: 53.58546156635131, longitude: 10.0086851103388 }
                   ]}
-                  strokeColor='blue'
+                  strokeColor={lineColor}
                   strokeWidth={5}
                   lineJoin='bevel'
-                  tappable={true}
                   lineCap='round'
                 />
                 <Marker
