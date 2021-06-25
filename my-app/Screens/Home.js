@@ -47,7 +47,7 @@ export default Home = () => {
     Lobster_400Regular,
   });
 
-  const mask = require("../Design/Icons/mask2.png");
+  const mask = require("../Design/Icons/mask3.png");
 
   /*
   const searchHandler = async (isLocation, lat, lng) => {
