@@ -76,7 +76,6 @@ export default Home = () => {
     } catch (err) {
       Alert.alert(
         "Could not get location!",
-        "Please try again later or enter city name.",
         [{ title: "Ok" }]
       );
     }
@@ -157,13 +156,15 @@ export default Home = () => {
               <MapView
                 style={(styles.map, StyleSheet.absoluteFillObject)}
                 provider={PROVIDER_GOOGLE}
-                loadingEnabled
+                loadingEnabled={true}
                 showsUserLocation={true}
+                showsMyLocationButton={true}
+                showsCompass={true}
                 initialRegion={{
                   latitude: 53.5502,
                   longitude: 9.992,
                   latitudeDelta: 0.1,
-                  longitudeDelta: 0.75, //am Ende zurück auf ca. 0.05 stellen
+                  longitudeDelta: 0.05, //am Ende zurück auf ca. 0.05 stellen
                 }}
               >
                 {/*Steindamm*/}
@@ -658,6 +659,15 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55037363914539,
+                    longitude: 9.999337171915151
+                  }}
+                  image={mask}
+                  title={'Ida-Ehre-Platz'}
+                  description={'Im räumlichen Bereich zwischen Mönckebergstraße und Steinstraße, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
+                />
                 {/*Lange Mühren*/}
                 <Polyline
                   coordinates={[
@@ -671,6 +681,15 @@ export default Home = () => {
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
+                />
+                <Marker
+                  coordinate={{
+                    latitude: 53.55201726296338,
+                    longitude: 10.004483536057341
+                  }}
+                  image={mask}
+                  title={'Lange Mühren'}
+                  description={'Im räumlichen Bereich zwischen Spitalerstraße und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
                 />
                 {/*Bergstraße*/}
                 <Polyline
@@ -687,7 +706,16 @@ export default Home = () => {
                   tappable={true}
                   lineCap='round'
                 />
-                {/*Neumühlen / Große Elbstraße */}
+                <Marker
+                  coordinate={{
+                    latitude: 53.55106022292322,
+                    longitude: 9.99523623617699
+                  }}
+                  image={mask}
+                  title={'Bergstraße'}
+                  description={'Im räumlichen Bereich der Hausnummern 9 bis 28 zwischen Ballindamm und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr'}
+                />
+                {/*Neumühlen*/}
                 <Polyline
                   coordinates={[
                     { latitude: 53.544451648354745, longitude: 9.942577923660632 },
@@ -708,6 +736,15 @@ export default Home = () => {
                   lineJoin='bevel'
                   tappable={true}
                   lineCap='round'
+                />
+                <Marker
+                  coordinate={{
+                    latitude: 53.5450936239327,
+                    longitude: 9.903314694499525
+                  }}
+                  image={mask}
+                  title={'Neumühlen'}
+                  description={'Im räumlichen Bereich ab der Einmündung Kaistraße/Große Elbstraße in westlicher Richtung, einschließlich dem wasserseitigen Westkai sowie dem Anleger Neumühlen/Museumshafen, der Großen Elbstraße im räumlichen Bereich zwischen Hausnummer 281 (Fahrradstraße, einschließlich Kehre) und Hausnummer 143a (Dockland/Van-​der-​Smissen-​Straße) einschließlich dem parallel verlaufenden wasserseitigen Weg sowie dem Ostkai, der Straße Övelgönne einschließlich dem räumlichen Bereich um das Lüfterbauwerk, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr'}
                 />
                 {/*An der Alster und Ferdinandstor*/}
                 <Polyline
