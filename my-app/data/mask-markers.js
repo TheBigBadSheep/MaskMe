@@ -6,7 +6,7 @@ export default maskData = [
     },
     title: 'Steindamm',
     description:
-      'Im räumlichen Bereich von der Hausnummer 33 bis zum Steintorplatz, täglich von 8 Uhr bis 22 Uhr',
+      'Nr. 33 bis Steintorplatz, täglich 8 - 22 Uhr',
   },
   {
     coordinate: {
@@ -14,7 +14,7 @@ export default maskData = [
       longitude: 10.013147487153413,
     },
     title: 'Stralsunder Straße',
-    description: 'Täglich von 8 Uhr bis 22 Uhr',
+    description: 'Täglich 8 - 22 Uhr',
   },
   {
     coordinate: {
@@ -22,7 +22,7 @@ export default maskData = [
       longitude: 10.009229010029532,
     },
     title: 'Steintorplatz',
-    description: 'Einschließlich der angrenzenden öffentlichen Wege, Straßen und Plätze, abgegrenzt durch die Bahnüberführung der Straße Steintordamm, dem Gebäude des Museums für Kunst und Gewerbe, dem Gebäude des Zentralen Omnibusbahnhofs, dem Gebäude mit der Hausnummer Steindamm 2, dem Gebäude mit der Hausnummer Steindamm 1, den Gebäuden mit den Hausnummern Steintorplatz 3 und Kirchenallee 57 sowie dem Gebäude des Hauptbahnhofs, täglich von 8 Uhr bis 22 Uhr',
+    description: 'Einschließlich angrenzender öffentlicher Wege, Straßen und Plätze; täglich 8 - 22 Uhr',
   },
   {
     coordinate: {
@@ -30,7 +30,7 @@ export default maskData = [
       longitude: 9.997781029481569
     },
     title: 'Ballindamm',
-    description: 'Im räumlichen Bereich vor dem Gebäude mit der Hausnummer 40, abgegrenzt durch die Straßen Ballindamm und Bergstraße, täglich von 10 Uhr bis 20 Uhr',
+    description: 'Vor Nr. 40; täglich 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -38,7 +38,7 @@ export default maskData = [
       longitude: 9.957610220763666
     },
     title: 'Große Freiheit',
-    description: 'Im räumlichen Bereich von der Hausnummer 1 bis zur Hausnummer 47, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag',
+    description: 'Nr. 1 - 47; freitags, sonnabends sowie feiertags und tags zuvor jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -46,7 +46,7 @@ export default maskData = [
       longitude: 9.961290345544802
     },
     title: 'Hamburger Berg',
-    description: 'Im räumlichen Bereich der Hausnummern 1 bis 39, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag',
+    description: 'Nr. 1 - 39; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -54,7 +54,7 @@ export default maskData = [
       longitude: 9.960122399310496
     },
     title: 'Talstraße',
-    description: 'Im räumlichen Bereich der Hausnummern 1 bis 36, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag',
+    description: 'Nr. 1 - 36; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -62,7 +62,7 @@ export default maskData = [
       longitude: 9.960957556382363
     },
     title: 'Hans-Albers-Platz',
-    description: 'Einschließlich der Friedrichstraße im räumlichen Bereich zwischen und einschließlich den Hausnummern 11 beziehungsweise 24 bis 21 beziehungsweise 28, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag',
+    description: 'Einschließlich Friedrichstraße Nr. 11 - 21 und 24 - 28; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -70,7 +70,7 @@ export default maskData = [
       longitude: 9.967077465644058
     },
     title: 'Reeperbahn',
-    description: 'Einschließlich der Plätze Nobistor und Spielbudenplatz, abgegrenzt durch den Millerntorplatz, die Straße Zirkusweg, die Holstenstraße und den Finkenpark sowie in der Straße Spielbudenplatz im räumlichen Bereich der Hausnummern 1 bis 31, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag',
+    description: 'Einschließlich Nobistor und Spielbudenplatz; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -78,7 +78,7 @@ export default maskData = [
       longitude: 9.961552500670312
     },
     title: 'Schulterblatt',
-    description: 'Im räumlichen Bereich zwischen den Straßen Susannenstraße und Rosenhofstraße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 12 Uhr bis 4 Uhr am Folgetag',
+    description: 'Zwischen Susannenstraße und Rosenhofstraße; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 12 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -86,7 +86,7 @@ export default maskData = [
       longitude: 9.928732439522896
     },
     title: 'Alma-Wartenberg-Platz',
-    description: 'Einschließlich der Bahrenfelder Straße im räumlichen Bereich zwischen und einschließlich den Hausnummern 135 beziehungsweise 146 und den Hausnummern 183 beziehungsweise 188, der Kleinen Rainstraße im räumlichen Bereich bis zu und einschließlich den Hausnummern 3 beziehungsweise 6, der Nöltingstraße im räumlichen Bereich bis zu und einschließlich den Hausnummern 5 beziehungsweise 12, der Friedensallee im räumlichen Bereich bis zu und einschließlich den Hausnummern 7 beziehungsweise 14 sowie der Bergiusstraße im räumlichen Bereich bis zu der Hausnummer 7, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag',
+    description: 'Einschließlich Abschnitte von Bahrenfelder Straße, Kleine Rainstraße, Nöltingstraße, Friedensallee und Bergiusstraße; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -94,7 +94,7 @@ export default maskData = [
       longitude: 9.928735829298322
     },
     title: 'Hohenesch',
-    description: 'Im räumlichen Bereich von und einschließlich der Hausnummern 1 beziehungsweise 6 bis zur Bahrenfelder Straße, freitags, sonnabends sowie an Feiertagen und tags zuvor, jeweils von 18 Uhr bis 4 Uhr am Folgetag',
+    description: 'Nr. 1 bzw. 6 bis Bahrenfelder Straße; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -102,7 +102,7 @@ export default maskData = [
       longitude: 9.931487262252672
     },
     title: 'Ottenser Hauptstraße',
-    description: 'Im räumlichen Bereich der Hausnummern 2 bis 27, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Nr. 2 - 27; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -110,7 +110,7 @@ export default maskData = [
       longitude: 9.935425712696095
     },
     title: 'Umfeld des Bahnhofs Altona',
-    description: 'Im räumlichen Bereich der Präsident-​Krahn-​Straße zwischen und einschließlich der Hausnummern 1 und 8 beidseitig, Max-​Brauer-​Allee zwischen und einschließlich der Hausnummern 51 und 53 auf der zum Bahnhof gelegenen Gehwegseite (westlich), zwischen und einschließlich der Gebäude Paul-​Nevermann-​Platz 5 und Ottenser Hauptstraße 1a beidseitig, zwischen und einschließlich der Gebäude Ottenser Hauptstraße 1 und Scheel-​Plessen-​Straße 9, zwischen und einschließlich der Gebäude Scheel-​Plessen-​Straße 9 bis Paul-​Nevermann-​Platz 19, montags bis samstags, jeweils von 8 Uhr bis 22 Uhr',
+    description: 'Abschnitte von Präsident-​Krahn-​Straße, Max-​Brauer-​Allee, Paul-​Nevermann-​Platz, Ottenser Hauptstraße, Scheel-​Plessen-​Straße und Paul-​Nevermann-​Platz; montags bis samstags, jeweils 8 - 22 Uhr',
   },
   {
     coordinate: {
@@ -118,7 +118,7 @@ export default maskData = [
       longitude: 10.00837555242208
     },
     title: 'Kirchenallee',
-    description: 'Im räumlichen Bereich zwischen Steintorplatz, Ernst-​Merck-​Straße, Hachmannplatz und Heidi-​Kabel-​Platz täglich von 8 Uhr bis 22 Uhr',
+    description: 'Zwischen Steintorplatz, Ernst-​Merck-​Straße, Hachmannplatz und Heidi-​Kabel-​Platz; täglich 8 - 22 Uhr',
   },
   {
     coordinate: {
@@ -126,7 +126,7 @@ export default maskData = [
       longitude: 10.006990152008685
     },
     title: 'Heidi-Kabel-Platz',
-    description: 'Im räumlichen Bereich vor dem Gebäude Ernst-​Merck-​Straße 9, der Kirchenallee und dem Hachmannplatz täglich von 8 Uhr bis 22 Uhr',
+    description: 'Vor Ernst-​Merck-​Straße 9, Kirchenallee und Hachmannplatz; täglich 8 - 22 Uhr',
   },
   {
     coordinate: {
@@ -134,7 +134,7 @@ export default maskData = [
       longitude: 10.007173947065153
     },
     title: 'Steintordamm',
-    description: 'Im räumlichen Bereich der Steintorbrücke zwischen Steintorplatz und Steintorwall täglich von 8 Uhr bis 22 Uhr',
+    description: 'Zwischen Steintorplatz und Steintorwall; täglich 8 - 22 Uhr',
   },
   {
     coordinate: {
@@ -142,7 +142,7 @@ export default maskData = [
       longitude: 10.004879706972048
     },
     title: 'Steintorwall',
-    description: 'Im räumlichen Bereich zwischen Mönckebergstraße 1 und Georgsplatz/Ernst-​Merck-​Straße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Zwischen Mönckebergstraße 1 und Georgsplatz/Ernst-​Merck-​Straße; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -150,7 +150,7 @@ export default maskData = [
       longitude: 10.00072922924413
     },
     title: 'Mönckebergstraße',
-    description: 'Im räumlichen Bereich der Hausnummern 1 bis 31 zwischen Glockengießerwall/Steintorwall und Rathausmarkt einschließlich der Tunnelanlage zum Hauptbahnhof montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Nr. 1 - 31 zwischen Glockengießerwall/Steintorwall und Rathausmarkt einschließlich Tunnelanlage zum Hauptbahnhof; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -158,7 +158,7 @@ export default maskData = [
       longitude: 10.002585257912363
     },
     title: 'Spitalerstraße',
-    description: 'Im räumlichen Bereich zwischen Steintorwall und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Zwischen Steintorwall und Mönckebergstraße; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -166,7 +166,7 @@ export default maskData = [
       longitude: 10.001334934899512
     },
     title: 'Barkhof',
-    description: 'Im räumlichen Bereich zwischen Spitalerstraße und Mönckebergstraße, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Zwischen Spitalerstraße und Mönckebergstraße; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -174,7 +174,7 @@ export default maskData = [
       longitude: 9.999001798020075
     },
     title: 'Gerhart-Hauptmann-Platz',
-    description: 'Im räumlichen Bereich zwischen Mönckebergstraße und Rosenstraße beziehungsweise Kleine Rosenstraße, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Zwischen Mönckebergstraße und Rosenstraße bzw. Kleine Rosenstraße; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -182,7 +182,7 @@ export default maskData = [
       longitude: 9.999337171915151
     },
     title: 'Ida-Ehre-Platz',
-    description: 'Im räumlichen Bereich zwischen Mönckebergstraße und Steinstraße, montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Zwischen Mönckebergstraße und Steinstraße; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -190,7 +190,7 @@ export default maskData = [
       longitude: 10.004483536057341
     },
     title: 'Lange Mühren',
-    description: 'Im räumlichen Bereich zwischen Spitalerstraße und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Zwischen Spitalerstraße und Mönckebergstraße; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -198,7 +198,7 @@ export default maskData = [
       longitude: 9.99523623617699
     },
     title: 'Bergstraße',
-    description: 'Im räumlichen Bereich der Hausnummern 9 bis 28 zwischen Ballindamm und Mönckebergstraße montags bis sonnabends, jeweils von 10 Uhr bis 20 Uhr',
+    description: 'Nr. 9 bis 28 zwischen Ballindamm und Mönckebergstraße; montags bis sonnabends jeweils 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -206,7 +206,7 @@ export default maskData = [
       longitude: 9.903314694499525
     },
     title: 'Neumühlen',
-    description: 'Im räumlichen Bereich ab der Einmündung Kaistraße/Große Elbstraße in westlicher Richtung, einschließlich dem wasserseitigen Westkai sowie dem Anleger Neumühlen/Museumshafen, der Großen Elbstraße im räumlichen Bereich zwischen Hausnummer 281 (Fahrradstraße, einschließlich Kehre) und Hausnummer 143a (Dockland/Van-​der-​Smissen-​Straße) einschließlich dem parallel verlaufenden wasserseitigen Weg sowie dem Ostkai, der Straße Övelgönne einschließlich dem räumlichen Bereich um das Lüfterbauwerk, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr',
+    description: 'Ab Einmündung Kaistraße/Große Elbstraße, einschließlich wasserseitigem Westkai sowie Anleger Neumühlen/Museumshafen, Abschnitte von Großer Elbstraße und Övelgönne; sonnabends, sonntags und feiertags 10 - 18 Uhr',
   },
   {
     coordinate: {
@@ -214,7 +214,7 @@ export default maskData = [
       longitude: 10.012443060456654
     },
     title: 'An der Alster und Ferdinandstor',
-    description: 'Von der Straße Schwanenwik bis zur Bahnbrücke (Ferdinandstor) sowie auf der Kennedybrücke (einschließlich Brückenbauwerk und der angrenzenden Grünanlage bis zu den Bahngleisen) und der Gurlittinsel; jeweils die wasserseitig gelegenen Fuß- und Radwege der öffentlichen Grünanlagen einschließlich des Uferrandes, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr',
+    description: 'Von Schwanenwik bis Bahnbrücke (Ferdinandstor) sowie Kennedybrücke und Gurlittinsel; sonnabends, sonntags und feiertags 10 - 18 Uhr',
   },
   {
     coordinate: {
@@ -222,7 +222,7 @@ export default maskData = [
       longitude: 10.01579002384025
     },
     title: 'Eduard-Rhein-Ufer',
-    description: 'Schöne Aussicht, Fährhausstraße im räumlichen Bereich der Hausnummern 2 bis 20, Herbert-​Weichmann-​Straße im räumlichen Bereich ab Hausnummer 65 beidseitig bis Bellevue jeweils einschließlich der angrenzenden öffentlichen Grünanlagen bis zum Uferrand, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr',
+    description: 'Schöne Aussicht, Fährhausstraße 2 - 20, Herbert-​Weichmann-​Straße ab Nr. 65 beidseitig bis Bellevue; sonnabends, sonntags und feiertags 10 - 18 Uhr',
   },
   {
     coordinate: {
@@ -230,7 +230,7 @@ export default maskData = [
       longitude: 10.003231722129508
     },
     title: 'Krugkoppelbrücke',
-    description: 'Straße Fernsicht bis zu und einschließlich Hausnummern 1 bis 7 einschließlich der Straße Leinpfad bis zu und einschließlich Hausnummer 1 sowie der Fernsichtbrücke bis zur Einmündung Bellevue, der Einmündung Fernsichtbrücke, in der Straße Bellevue bis zu und einschließlich Hausnummern 47 bis 1 einschließlich der Sierichstraße bis zu und einschließlich Hausnummer 4 jeweils einschließlich der angrenzenden öffentlichen Grünanlagen bis zum Uferrand, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr',
+    description: 'Fernsicht 1 - 7 einschließlich Leinpfad 1 sowie Fernsichtbrücke bis Einmündung Bellevue, Einmündung Fernsichtbrücke, Bellevue 1- 47 einschließlich Sierichstraße 1- 4; sonnabends, sonntags und feiertags 10 - 18 Uhr',
   },
   {
     coordinate: {
@@ -238,7 +238,7 @@ export default maskData = [
       longitude: 10.01193071207474
     },
     title: 'Mühlenkamp',
-    description: 'Im räumlichen Bereich der Hausnummern 1 bis 21 und 2 bis 18, zwischen Körnerstraße und Gertigstraße, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 18 Uhr',
+    description: 'Nr. 1 - 21 und 2 - 18, zwischen Körnerstraße und Gertigstraße; sonnabends, sonntags und feiertags 10 - 18 Uhr',
   },
   {
     coordinate: {
@@ -246,7 +246,7 @@ export default maskData = [
       longitude: 9.99290378780909
     },
     title: 'Jungfernstieg',
-    description: 'Von Hausnummern 1 bis 32 einschließlich dem Alsteranleger, sonnabends, sonntags und an Feiertagen in der Zeit von 10 Uhr bis 20 Uhr',
+    description: 'Nr. 1 - 32 einschließlich Alsteranleger; sonnabends, sonntags und feiertags 10 - 20 Uhr',
   },
   {
     coordinate: {
@@ -254,7 +254,7 @@ export default maskData = [
       longitude: 10.01334832548278
     },
     title: 'Goldbekufer',
-    description: 'Zwischen Barmbeker Straße und Goldbekplatz/Moorfurthweg, sonnabends in der Zeit von 8 Uhr bis 15 Uhr',
+    description: 'Zwischen Barmbeker Straße und Goldbekplatz/Moorfurthweg; sonnabends 8 - 15 Uhr',
   },
   {
     coordinate: {
@@ -262,7 +262,7 @@ export default maskData = [
       longitude: 10.014499650926219
     },
     title: 'Geibelstraße',
-    description: 'Zwischen Semperstraße und Goldbekufer, sonnabends in der Zeit von 8 Uhr bis 15 Uhr',
+    description: 'Zwischen Semperstraße und Goldbekufer; sonnabends 8 - 15 Uhr',
   },
   {
     coordinate: {
@@ -270,7 +270,7 @@ export default maskData = [
       longitude: 10.013034942228687
     },
     title: 'Forsmannstraße',
-    description: 'Zwischen Semperstraße und Goldbekufer, sonnabends in der Zeit von 8 Uhr bis 15 Uhr',
+    description: 'Zwischen Semperstraße und Goldbekufer; sonnabends 8 - 15 Uhr',
   },
   {
     coordinate: {
@@ -278,7 +278,7 @@ export default maskData = [
       longitude: 10.01045411325463
     },
     title: 'Goldbekplatz',
-    description: 'Sonnabends in der Zeit von 8 Uhr bis 15 Uhr',
+    description: 'Sonnabends 8 - 15 Uhr',
   },
   {
     coordinate: {
@@ -286,6 +286,6 @@ export default maskData = [
       longitude: 10.00934210894994
     },
     title: 'Moorfurthweg',
-    description: 'Sonnabends in der Zeit von 8 Uhr bis 15 Uhr',
+    description: 'Sonnabends 8 - 15 Uhr',
   },
 ];

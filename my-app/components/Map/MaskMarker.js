@@ -10,15 +10,15 @@ export default MaskMarker = ({ coordinate, title, description }) => {
     <Marker
       coordinate={coordinate}
       image={mask}
-     // title={title}
-    // description={description}
+    //title={title}
+    //description={description}
     >
-    <Callout>
-          <View style={{height: 120, width: 300}}>
-          <Text style={styles.calloutStyle}>{title} </Text>
-          <Text style ={{fontSize: 12 }}>{description} </Text>
-          </View>
-          </Callout>  
+      <Callout>
+        <View style={{ maxHeight: 150, maxWidth: 300 }}>
+          <Text style={styles.calloutTitle}>{title}</Text>
+          <Text style={styles.calloutText}>{description}</Text>
+        </View>
+      </Callout>
     </Marker>
   );
 };

@@ -163,10 +163,18 @@ export default StyleSheet.create({
     color: 'white',
     marginLeft: '4%',
     marginTop: '2%',
-  }, scrollView2: {
-
-
-
+  },
+  calloutTitle: {
+    flex: 0,
+    color: "black",
+    fontSize: 15,
+    fontWeight: 'bold',
+    alignSelf: "flex-start",
+    paddingBottom: 0,
+  },
+  calloutText: {
+    fontSize: 12,
+    color: "dimgray",
   },
 
 
@@ -222,16 +230,5 @@ export default StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
   },
-
-  calloutStyle: {
-    
-    flex: 0,
-    color: "black",
-    fontSize: 20,
-    fontWeight: 'bold',
-    alignSelf: "flex-start",
-    paddingBottom: 0,
-      
-  }
 
 });
