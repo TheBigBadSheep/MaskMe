@@ -8,11 +8,12 @@ import { storeMyStuff, getMyStuff } from '../StorageStuff/StorageFunctions';
 
 export default Settings = () => {
   const [areNotifications, setNotifications] = useState(false)
-  const [isGPS, setGPS] = useState(false)
+  const [isGPS, setGPS] = useState(true)
 
 
   useEffect(() => {
     
+
     getMyStuff('GPS').then((returnedValue) => {
       setGPS(JSON.parse(returnedValue));
     }).catch(() => console.log("Fehler beim Darkmode Laden"));

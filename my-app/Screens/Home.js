@@ -28,12 +28,12 @@ import maskData from "../data/mask-markers";
 import MaskMarker from "../components/Map/MaskMarker";
 import restrictedRegions from "../data/restricted-regions";
 import RestrictedRegion from "../components/Map/RestrictedRegion";
-import settings from "./settings";
+
 
 export default Home = () => {
   //Das ist die Variable für die Eingabe eines Ortes. Die wird dann hier drin gespeichert
   const [currentText, changeCurrentText] = useState("");
-  const [isGPS, setGPS] = useState(true);
+  const [isGPS, setGPS] = useState(false);
 
   //Das ist die Funktion um die oben genannte Variable zu ändern (Wird bei tippen auf die Lupe aufgerufen)
   const changingText = (newText) => {
