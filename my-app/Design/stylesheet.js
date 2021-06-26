@@ -223,4 +223,15 @@ export default StyleSheet.create({
     flexDirection: 'row',
   },
 
+  calloutStyle: {
+    
+    flex: 0,
+    color: "black",
+    fontSize: 20,
+    fontWeight: 'bold',
+    alignSelf: "flex-start",
+    paddingBottom: 0,
+      
+  }
+
 });
