@@ -116,7 +116,7 @@ export default StyleSheet.create({
 
   placeforMapSettings: {
     backgroundColor: 'white',
-    height: '40%',
+    height: '30%',
     width: '80%',
     borderColor: maincolor,
     borderWidth: 1,

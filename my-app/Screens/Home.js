@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
+import {  getMyStuff } from '../StorageStuff/StorageFunctions';
 import {
-  TextInput,
   Text,
   View,
   Image,
-  ImageBackground,
-  TouchableOpacity,
   StyleSheet,
   TouchableWithoutFeedback,
   Keyboard,
   Alert,
 } from "react-native";
+
 import styles from "../Design/stylesheet";
 import { Ionicons } from "@expo/vector-icons";
 import AppLoading from "expo-app-loading";
@@ -29,10 +28,12 @@ import maskData from "../data/mask-markers";
 import MaskMarker from "../components/Map/MaskMarker";
 import restrictedRegions from "../data/restricted-regions";
 import RestrictedRegion from "../components/Map/RestrictedRegion";
+import settings from "./settings";
 
 export default Home = () => {
   //Das ist die Variable für die Eingabe eines Ortes. Die wird dann hier drin gespeichert
   const [currentText, changeCurrentText] = useState("");
+  const [isGPS, setGPS] = useState(true);
 
   //Das ist die Funktion um die oben genannte Variable zu ändern (Wird bei tippen auf die Lupe aufgerufen)
   const changingText = (newText) => {
@@ -56,16 +57,16 @@ export default Home = () => {
       const location = await getCurrentPositionAsync({
         timeout: 5000,
       });
-    } catch (err) {
-      Alert.alert("Could not get location!", [{ title: "Ok" }]);
-    }
-  };
+      } catch (err) {
+        Alert.alert("Could not get location!", [{ title: "Ok" }]);
+      }
+    };
 
   const verifyPermission = async () => {
     const result = await requestPermissionsAsync();
     if (result.status !== "granted") {
       Alert.alert(
-        "No Permissions!",
+        "No Permissions!", 
         "Please give location permissions to use this app.",
         [{ title: "Ok" }]
       );
@@ -76,8 +77,18 @@ export default Home = () => {
   };
 
   useEffect(() => {
-    getLocationHandler();
+      getLocationHandler();
   }, []);
+
+  useEffect(() => {
+    
+    getMyStuff('GPS').then((returnedValue) => {
+      setGPS(JSON.parse(returnedValue));
+    }).catch(() => console.log("Fehler beim Darkmode Laden"));
+
+  }, []);
+
+
 
   if (!fontsLoaded) return <AppLoading />;
 
@@ -124,7 +135,7 @@ export default Home = () => {
             </Text>
           </View>
         </View>
-
+         
         {/* MittlererContainer ist die Map und Searchbar */}
         <View style={styles.middleContainer}>
           <View style={(styles.placeforMap, StyleSheet.absoluteFillObject)}>
@@ -132,7 +143,7 @@ export default Home = () => {
               style={(styles.map, StyleSheet.absoluteFillObject)}
               provider={PROVIDER_GOOGLE}
               loadingEnabled={true}
-              showsUserLocation={true}
+              showsUserLocation={isGPS}
               showsMyLocationButton={true}
               showsCompass={true}
               initialRegion={{

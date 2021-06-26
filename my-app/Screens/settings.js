@@ -9,13 +9,10 @@ import { storeMyStuff, getMyStuff } from '../StorageStuff/StorageFunctions';
 export default Settings = () => {
   const [areNotifications, setNotifications] = useState(false)
   const [isGPS, setGPS] = useState(false)
-  const [isDarkMode, setDarkMode] = useState(false)
+
 
   useEffect(() => {
-    getMyStuff('darkmode').then((returnedValue) => {
-      setDarkMode(JSON.parse(returnedValue));
-    }).catch(() => console.log("Fehler beim Darkmode Laden"));
-
+    
     getMyStuff('GPS').then((returnedValue) => {
       setGPS(JSON.parse(returnedValue));
     }).catch(() => console.log("Fehler beim Darkmode Laden"));
@@ -45,15 +42,7 @@ export default Settings = () => {
       storeMyStuff('GPS', true);
     }
   }
-  const changeDarkMode = () => {
-    if (isDarkMode === true) {
-      setDarkMode(false);
-      storeMyStuff('darkmode', false);
-    } else {
-      setDarkMode(true);
-      storeMyStuff('darkmode', true);
-    }
-  }
+
 
   return (
 
@@ -97,19 +86,7 @@ export default Settings = () => {
             />
             <Text style={styles.settingText}>GPS Daten nutzen </Text>
           </TouchableOpacity>
-          <TouchableOpacity style={styles.settingbox} onPress={changeDarkMode}>
-            <RoundCheckbox
-              size={20}
-              borderColor={'#B2E0E6'}
-              backgroundColor={"#B2E0E6"}
-              iconColor={'white'}
-              checked={isDarkMode}
-              onValueChange={changeDarkMode}
-              style={styles.checkbox}
-            />
-            <Text style={styles.settingText}>Dark Mode hahaha als wenn </Text>
-
-          </TouchableOpacity>
+        
 
 
         </View>
