@@ -62,7 +62,7 @@ export default maskData = [
       longitude: 9.960957556382363
     },
     title: 'Hans-Albers-Platz',
-    description: 'Einschließlich Friedrichstraße Nr. 11 - 21 und 24 - 28; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
+    description: 'Einschließlich Friedrichstraße Nr. 11 - 21 und Nr. 24 - 28; freitags, sonnabends sowie feiertags und tags zuvor, jeweils 18 - 4 Uhr am Folgetag',
   },
   {
     coordinate: {
@@ -238,7 +238,7 @@ export default maskData = [
       longitude: 10.01193071207474
     },
     title: 'Mühlenkamp',
-    description: 'Nr. 1 - 21 und 2 - 18, zwischen Körnerstraße und Gertigstraße; sonnabends, sonntags und feiertags 10 - 18 Uhr',
+    description: 'Nr. 1 - 21, zwischen Körnerstraße und Gertigstraße; sonnabends, sonntags und feiertags 10 - 18 Uhr',
   },
   {
     coordinate: {
