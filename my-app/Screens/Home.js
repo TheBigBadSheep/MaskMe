@@ -142,7 +142,7 @@ export default Home = () => {
                 longitudeDelta: 0.05,
               }}
             >
-              {/* All Mask markers */}
+              {/* Alle Mask markers */}
               {maskData.map((point) => (
                 <MaskMarker
                   key={`${point.coordinate.latitude};${point.coordinate.longitude}`}
@@ -152,7 +152,7 @@ export default Home = () => {
                 />
               ))}
 
-              {/* All restricted regions */}
+              {/* Alle restricted regions */}
               {restrictedRegions.map((region) => (
                 <RestrictedRegion
                   key={`${region.coordinates[0].latitude};${region.coordinates[0].longitude}`}
@@ -179,7 +179,7 @@ export default Home = () => {
               <Button
                 type="clear"
                 icon={<Ionicons name="pin-outline" size={32} />}
-                //onPress={searchHandler}
+              //onPress={searchHandler}
               />
 
               {/*
@@ -194,14 +194,10 @@ export default Home = () => {
               </TouchableOpacity>
               */}
             </View>
-
-            <View style={{ position: "absolute", top: 100, left: 50 }} />
-            {/*</ImageBackground>*/}
+            {/*<View style={{ position: "absolute", top: 100, left: 50 }} />*/}
           </View>
         </View>
       </View>
     </TouchableWithoutFeedback>
   );
-
-  // New Branch was created
 };

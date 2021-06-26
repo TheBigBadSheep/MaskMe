@@ -7,7 +7,6 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default List = () => {
         return (
-
                 <View style={styles.screen}>
 
                         {/* upperContainer ist der mit Logo und Hinweisbalken */}
