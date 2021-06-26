@@ -14,15 +14,11 @@ import styles from "../Design/stylesheet";
 import { Ionicons } from "@expo/vector-icons";
 import AppLoading from "expo-app-loading";
 import { SearchBar } from "react-native-elements";
-import MapView, { Marker, PROVIDER_GOOGLE, Polyline } from "react-native-maps";
+import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 
 import { useFonts, Lobster_400Regular } from "@expo-google-fonts/lobster";
-import { element } from "prop-types";
 import { Button } from "react-native-elements/dist/buttons/Button";
-import {
-  requestPermissionsAsync,
-  getCurrentPositionAsync,
-} from "expo-location";
+import { requestPermissionsAsync, getCurrentPositionAsync } from "expo-location";
 
 import maskData from "../data/mask-markers";
 import MaskMarker from "../components/Map/MaskMarker";
@@ -110,7 +106,7 @@ export default Home = () => {
               marginLeft: 20,
               marginBottom: 0,
             }}
-            source={require("../Design/pics/logo.png")}
+            source={require("../Design/pics/logo2.png")}
           />
 
           {/**Die Header haben ihren Style immer direkt definiert, nicht im Stylesheet, wegen der custom Font. */}
