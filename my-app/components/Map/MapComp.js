@@ -33,18 +33,20 @@ export default MapComp = ({ coords }) => {
                 loadingEnabled={true}
                 showsUserLocation={hasGPS}
                 showsMyLocationButton={hasGPS}
-                showsCompass={true}
+                //showsCompass={true}
                 onMapReady={() => setReady(true)}
-                initialRegion={{
+                //Startkoordinaten Hamburg
+                initialRegion={{ 
                     latitude: 53.5502,
                     longitude: 9.992,
                     latitudeDelta: 0.1,
                     longitudeDelta: 0.05,
                 }}
+                //Neue Region nach Suchanfrage
                 region={coords && {
                     latitude: coords[0],
                     longitude: coords[1],
-                    latitudeDelta: 0.01,
+                    latitudeDelta: 0.005,
                     longitudeDelta: 0.005,
                 }}
             >

@@ -66,7 +66,7 @@ export default Home = () => {
 
   useEffect(() => {
     const debounceFn = async () => {
-      const locations = await Location.geocodeAsync("Hamburg, "+zwischenText);
+      const locations = await Location.geocodeAsync("Hamburg, " + zwischenText);
       if (locations.length > 0) {
         const location = locations[0];
         setCoords([location.latitude, location.longitude]);
@@ -74,7 +74,7 @@ export default Home = () => {
         setCoords(null);
       }
     };
-    debounce(debounceFn, 1000)();
+    debounce(debounceFn, 0)();
   }, [zwischenText]);
 
   if (!fontsLoaded) return <AppLoading />;
@@ -124,11 +124,15 @@ export default Home = () => {
           {/*Das ist die View der Searchbar */}
           <View style={styles.searchContainer}>
             <SearchBar
+              inputContainerStyle={{backgroundColor: 'white'}}
               containerStyle={styles.searchbar}
-              placeholder="Suche einen Ort..."
+              placeholder="Suche einen Ort in Hamburg..."
+              placeholderTextColor='#BEBEBE'
               autocorrect={false}
               lightTheme={true}
               value={currentText}
+              round={true}
+              searchIcon={false}
               onChangeText={(val) => {
                 changeCurrentText(val);
               }}
@@ -136,7 +140,7 @@ export default Home = () => {
 
             <Button
               type="clear"
-              icon={<Ionicons name="search-outline" paddingRight={2} size={24} color={'#CDC9C9'} />}
+              icon={<Ionicons name="search" paddingRight={2} size={24} color={'black'} />}
               onPress={()=>changeZwischenText(currentText)}
             />
           </View>

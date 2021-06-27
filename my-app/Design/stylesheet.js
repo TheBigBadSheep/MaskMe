@@ -66,10 +66,9 @@ export default StyleSheet.create({
   },
 
   searchContainer: {
-    flexDirection: "row",
+    flexDirection: 'row',
     height: '7%',
     width: '97%',
-    backgroundColor: 'white',
     marginTop: '4%',
     borderRadius: 19,
 

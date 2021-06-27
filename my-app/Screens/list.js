@@ -7,7 +7,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 export default List = () => {
         const size = 22;
-        const color = "#B2E0E6"; // B2E0E6
+        let color = '#B2E0E6';
 
         return (
                 <View style={styles.screen}>
