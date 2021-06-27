@@ -82,13 +82,7 @@ export default Home = () => {
         {/* upperContainer ist der mit Logo und Hinweisbalken */}
         <View style={styles.upperContainer}>
           <Image
-            style={{
-              height: "42%",
-              width: "12%",
-              alignSelf: "flex-start",
-              marginLeft: 20,
-              marginBottom: 0,
-            }}
+            style={styles.logo}
             source={require("../Design/pics/logo2.png")}
           />
 

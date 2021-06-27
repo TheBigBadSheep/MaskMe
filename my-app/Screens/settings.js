@@ -49,13 +49,15 @@ export default Settings = () => {
 
     <View style={styles.screen}>
       {/* upperContainer ist der mit Logo und Hinweisbalken */}
+
       <View style={styles.upperContainer}>
-        <Image style={{ height: '42%', width: '12%', alignSelf: 'flex-start', marginLeft: 20, marginBottom: 20, }} source={require('../Design/pics/logo2.png')} />
+        <Image style={styles.logo} source={require('../Design/pics/logo2.png')} />
         <Text style={{ flex: 1, fontFamily: 'Lobster_400Regular', color: '#B2E0E6', fontSize: 50, fontWeight: 'normal', alignSelf: 'flex-start', marginLeft: '4%', paddingBottom: 10, }}>Einstellungen</Text>
         <View style={styles.textbalken}>
           <Text style={styles.weisserText}>Aktiviere für Benachrichtigungen bei Betreten einer Maskenzone "Push-Benachrichtigungen" & "GPS".</Text>
         </View>
       </View>
+
       <View style={styles.middleContainerSettings}>
 
 

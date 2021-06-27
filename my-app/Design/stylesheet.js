@@ -6,6 +6,14 @@ let accentgrey = "#CDC9C9";
 const screen = Dimensions.get("screen");
 export default StyleSheet.create({
 
+
+  logo:{
+    height: "42%",
+    width: "12%",
+    alignSelf: "flex-start",
+    marginLeft: 20,
+    marginBottom: 0
+  },
   textbalken: {
     backgroundColor: maincolor,
 
