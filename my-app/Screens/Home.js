@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
-import {  getMyStuff } from '../StorageStuff/StorageFunctions';
 import {
   Text,
   View,
   Image,
-  StyleSheet,
   TouchableWithoutFeedback,
   Keyboard,
   Alert,
@@ -14,25 +12,19 @@ import styles from "../Design/stylesheet";
 import { Ionicons } from "@expo/vector-icons";
 import AppLoading from "expo-app-loading";
 import { SearchBar } from "react-native-elements";
-import MapView, { PROVIDER_GOOGLE } from "react-native-maps";
 
 import { useFonts, Lobster_400Regular } from "@expo-google-fonts/lobster";
 import { Button } from "react-native-elements/dist/buttons/Button";
-import { requestPermissionsAsync, getCurrentPositionAsync } from "expo-location";
+import {
+  requestPermissionsAsync,
+  getCurrentPositionAsync,
+} from "expo-location";
 
 import MapComp from "../components/Map/MapComp";
-/*
-import maskData from "../data/mask-markers";
-import MaskMarker from "../components/Map/MaskMarker";
-import restrictedRegions from "../data/restricted-regions";
-import RestrictedRegion from "../components/Map/RestrictedRegion";
-*/
-
 
 export default Home = () => {
   //Das ist die Variable für die Eingabe eines Ortes. Die wird dann hier drin gespeichert
   const [currentText, changeCurrentText] = useState("");
-  //const [isGPS, setGPS] = useState(false);
 
   //Das ist die Funktion um die oben genannte Variable zu ändern (Wird bei tippen auf die Lupe aufgerufen)
   const changingText = (newText) => {
@@ -53,19 +45,17 @@ export default Home = () => {
     }
 
     try {
-      const location = await getCurrentPositionAsync({
-        timeout: 5000,
-      });
-      } catch (err) {
-        Alert.alert("Could not get location!", [{ title: "Ok" }]);
-      }
-    };
+      await getCurrentPositionAsync({ timeout: 5000 });
+    } catch {
+      Alert.alert("Could not get location!", [{ title: "Ok" }]);
+    }
+  };
 
   const verifyPermission = async () => {
     const result = await requestPermissionsAsync();
     if (result.status !== "granted") {
       Alert.alert(
-        "No Permissions!", 
+        "No Permissions!",
         "Please give location permissions to use this app.",
         [{ title: "Ok" }]
       );
@@ -76,20 +66,8 @@ export default Home = () => {
   };
 
   useEffect(() => {
-      getLocationHandler();
+    getLocationHandler();
   }, []);
-
-  /*
-  useEffect(() => {
-    
-    getMyStuff('GPS').then((returnedValue) => {
-      setGPS(JSON.parse(returnedValue));
-    }).catch(() => console.log("Fehler beim Darkmode Laden"));
-
-  }, []);
-  */
-
-
 
   if (!fontsLoaded) return <AppLoading />;
 
@@ -136,82 +114,31 @@ export default Home = () => {
             </Text>
           </View>
         </View>
-         
+
         {/* MittlererContainer ist die Map und Searchbar */}
         <View style={styles.middleContainer}>
-          <MapComp/>
-          {/*
-          <View style={(styles.placeforMap, StyleSheet.absoluteFillObject)}>
-            <MapView
-              style={(styles.map, StyleSheet.absoluteFillObject)}
-              provider={PROVIDER_GOOGLE}
-              loadingEnabled={true}
-              showsUserLocation={isGPS}
-              showsMyLocationButton={true}
-              showsCompass={true}
-              initialRegion={{
-                latitude: 53.5502,
-                longitude: 9.992,
-                latitudeDelta: 0.1,
-                longitudeDelta: 0.05,
+          <MapComp />
+
+          {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
+          <View style={styles.searchContainer}>
+            <SearchBar
+              containerStyle={styles.searchbar}
+              placeholder="Suche einen Ort..."
+              autocorrect={false}
+              lightTheme={true}
+              value={currentText}
+              onChangeText={(val) => {
+                changeCurrentText(val);
               }}
-            >
-              { Alle Mask markers }
-              {maskData.map((point) => (
-                <MaskMarker
-                  key={`${point.coordinate.latitude};${point.coordinate.longitude}`}
-                  coordinate={point.coordinate}
-                  title={point.title}
-                  description={point.description}
-                />
-              ))}
+              onSubmitEditing={changingText}
+            />
 
-              { Alle restricted regions }
-              {restrictedRegions.map((region) => (
-                <RestrictedRegion
-                  key={`${region.coordinates[0].latitude};${region.coordinates[0].longitude}`}
-                  coordinates={region.coordinates}
-                  width={region.width}
-                />
-              ))}
-            </MapView>
-            */}
-
-            {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
-            <View style={styles.searchContainer}>
-              <SearchBar
-                containerStyle={styles.searchbar}
-                placeholder="Suche einen Ort..."
-                autocorrect={false}
-                lightTheme={true}
-                value={currentText}
-                onChangeText={(val) => {
-                  changeCurrentText(val);
-                }}
-                onSubmitEditing={changingText}
-              />
-
-              <Button
-                type="clear"
-                icon={<Ionicons name="pin-outline" size={32} />}
-              //onPress={searchHandler}
-              />
-
-              {/*
-              <Button
-                type="clear"
-                icon={<Ionicons name="search-outline" size={32} />}
-                onPress={changingText}
-              />
-              
-              <TouchableOpacity onPress={() => console.log('dhjksds')}>
-                <Ionicons name="search-outline" size={32} color='#CDC9C9' style={{ marginLeft: '3%' }} />
-              </TouchableOpacity>
-              */}
-            </View>
-            {/*<View style={{ position: "absolute", top: 100, left: 50 }} />*/}
+            <Button
+              type="clear"
+              icon={<Ionicons name="pin-outline" size={32} />}
+            />
           </View>
-        {/*</View>*/}
+        </View>
       </View>
     </TouchableWithoutFeedback>
   );
