@@ -64,7 +64,7 @@ export default Home = () => {
 
   useEffect(() => {
     const debounceFn = async () => {
-      const locations = await Location.geocodeAsync(currentText);
+      const locations = await Location.geocodeAsync("Hamburg, "+currentText);
       if (locations.length > 0) {
         const location = locations[0];
         setCoords([location.latitude, location.longitude]);
