@@ -86,6 +86,7 @@ export default StyleSheet.create({
 
   searchbar: {
     flex: 1,
+    //flexDirection: 'row',
     backgroundColor: "transparent",
     borderBottomWidth: 0,
     borderTopWidth: 0,

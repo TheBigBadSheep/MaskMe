@@ -9,7 +9,7 @@ import MaskMarker from "./MaskMarker";
 import restrictedRegions from "../../data/restricted-regions";
 import RestrictedRegion from "./RestrictedRegion";
 
-export default MapComp = () => {
+export default MapComp = ( { coords }) => {
   const [isReady, setReady] = useState(false);
   const [hasGPS, setGPS] = useState(false);
 

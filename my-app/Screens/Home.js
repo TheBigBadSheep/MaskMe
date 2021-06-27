@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import {
   Text,
+  TextInput,
   View,
   Image,
   TouchableWithoutFeedback,
@@ -115,21 +116,21 @@ export default Home = () => {
 
           {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
           <View style={styles.searchContainer}>
-            <SearchBar
+            <TextInput
               containerStyle={styles.searchbar}
               placeholder="Suche einen Ort..."
               autocorrect={false}
-              lightTheme={true}
+              //lightTheme={true}
               value={currentText}
               onChangeText={(val) => {
                 changeCurrentText(val);
               }}
-              onSubmitEditing={changingText}
+              //onSubmitEditing={changingText}
             />
 
             <Button
               type="clear"
-              icon={<Ionicons name="pin-outline" size={32} />}
+              icon={<Ionicons name="search-outline" size={24} color={'#CDC9C9'} />}
             />
           </View>
         </View>
