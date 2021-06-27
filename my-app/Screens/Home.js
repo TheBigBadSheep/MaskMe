@@ -16,23 +16,15 @@ import { SearchBar } from "react-native-elements";
 
 import { useFonts, Lobster_400Regular } from "@expo-google-fonts/lobster";
 import { Button } from "react-native-elements/dist/buttons/Button";
-import {
-  requestPermissionsAsync,
-  getCurrentPositionAsync,
-} from "expo-location";
+import * as Location from "expo-location";
 
 import MapComp from "../components/Map/MapComp";
+import debounce from 'lodash/debounce';
 
 export default Home = () => {
   //Das ist die Variable für die Eingabe eines Ortes. Die wird dann hier drin gespeichert
   const [currentText, changeCurrentText] = useState("");
-
-  //Das ist die Funktion um die oben genannte Variable zu ändern (Wird bei tippen auf die Lupe aufgerufen)
-  const changingText = (newText) => {
-    if (newText != "") {
-      changeCurrentText(newText);
-    }
-  };
+  const [coords, setCoords] = useState(null);
 
   //Um die Custom Schriftart zu laden
   let [fontsLoaded] = useFonts({
@@ -46,14 +38,14 @@ export default Home = () => {
     }
 
     try {
-      await getCurrentPositionAsync({ timeout: 5000 });
+      await Location.getCurrentPositionAsync({ timeout: 5000 });
     } catch {
       Alert.alert("Could not get location!", [{ title: "Ok" }]);
     }
   };
 
   const verifyPermission = async () => {
-    const result = await requestPermissionsAsync();
+    const result = await Location.requestPermissionsAsync();
     if (result.status !== "granted") {
       Alert.alert(
         "No Permissions!",
@@ -69,6 +61,19 @@ export default Home = () => {
   useEffect(() => {
     getLocationHandler();
   }, []);
+
+  useEffect(() => {
+    const debounceFn = async () => {
+      const locations = await Location.geocodeAsync(currentText);
+      if (locations.length > 0) {
+        const location = locations[0];
+        setCoords([location.latitude, location.longitude]);
+      } else {
+        setCoords(null);
+      }
+    };
+    debounce(debounceFn, 1000)();
+  }, [currentText]);
 
   if (!fontsLoaded) return <AppLoading />;
 
@@ -112,20 +117,19 @@ export default Home = () => {
 
         {/* MittlererContainer ist die Map und Searchbar */}
         <View style={styles.middleContainer}>
-          <MapComp />
+          <MapComp coords={coords}/>
 
           {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
           <View style={styles.searchContainer}>
-            <TextInput
+            <SearchBar
               containerStyle={styles.searchbar}
               placeholder="Suche einen Ort..."
               autocorrect={false}
-              //lightTheme={true}
+              lightTheme={true}
               value={currentText}
               onChangeText={(val) => {
                 changeCurrentText(val);
               }}
-              //onSubmitEditing={changingText}
             />
 
             <Button
