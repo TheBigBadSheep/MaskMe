@@ -24,6 +24,8 @@ import debounce from 'lodash/debounce';
 export default Home = () => {
   //Das ist die Variable für die Eingabe eines Ortes. Die wird dann hier drin gespeichert
   const [currentText, changeCurrentText] = useState("");
+  const [zwischenText, changeZwischenText] = useState("");
+
   const [coords, setCoords] = useState(null);
 
   //Um die Custom Schriftart zu laden
@@ -64,7 +66,7 @@ export default Home = () => {
 
   useEffect(() => {
     const debounceFn = async () => {
-      const locations = await Location.geocodeAsync("Hamburg, "+currentText);
+      const locations = await Location.geocodeAsync("Hamburg, "+zwischenText);
       if (locations.length > 0) {
         const location = locations[0];
         setCoords([location.latitude, location.longitude]);
@@ -73,7 +75,7 @@ export default Home = () => {
       }
     };
     debounce(debounceFn, 1000)();
-  }, [currentText]);
+  }, [zwischenText]);
 
   if (!fontsLoaded) return <AppLoading />;
 
@@ -119,7 +121,7 @@ export default Home = () => {
         <View style={styles.middleContainer}>
           <MapComp coords={coords}/>
 
-          {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
+          {/*Das ist die View der Searchbar */}
           <View style={styles.searchContainer}>
             <SearchBar
               containerStyle={styles.searchbar}
@@ -135,6 +137,7 @@ export default Home = () => {
             <Button
               type="clear"
               icon={<Ionicons name="search-outline" paddingRight={2} size={24} color={'#CDC9C9'} />}
+              onPress={()=>changeZwischenText(currentText)}
             />
           </View>
         </View>
