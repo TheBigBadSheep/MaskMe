@@ -1,5 +1,4 @@
 import React from "react";
-
 import { Marker, Callout } from "react-native-maps";
 import { View, Text } from "react-native";
 import mask from "../../Design/Icons/mask2.png";

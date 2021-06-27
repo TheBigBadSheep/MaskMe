@@ -20,16 +20,19 @@ import { useFonts, Lobster_400Regular } from "@expo-google-fonts/lobster";
 import { Button } from "react-native-elements/dist/buttons/Button";
 import { requestPermissionsAsync, getCurrentPositionAsync } from "expo-location";
 
+import MapComp from "../components/Map/MapComp";
+/*
 import maskData from "../data/mask-markers";
 import MaskMarker from "../components/Map/MaskMarker";
 import restrictedRegions from "../data/restricted-regions";
 import RestrictedRegion from "../components/Map/RestrictedRegion";
+*/
 
 
 export default Home = () => {
   //Das ist die Variable für die Eingabe eines Ortes. Die wird dann hier drin gespeichert
   const [currentText, changeCurrentText] = useState("");
-  const [isGPS, setGPS] = useState(false);
+  //const [isGPS, setGPS] = useState(false);
 
   //Das ist die Funktion um die oben genannte Variable zu ändern (Wird bei tippen auf die Lupe aufgerufen)
   const changingText = (newText) => {
@@ -76,6 +79,7 @@ export default Home = () => {
       getLocationHandler();
   }, []);
 
+  /*
   useEffect(() => {
     
     getMyStuff('GPS').then((returnedValue) => {
@@ -83,6 +87,7 @@ export default Home = () => {
     }).catch(() => console.log("Fehler beim Darkmode Laden"));
 
   }, []);
+  */
 
 
 
@@ -134,6 +139,8 @@ export default Home = () => {
          
         {/* MittlererContainer ist die Map und Searchbar */}
         <View style={styles.middleContainer}>
+          <MapComp/>
+          {/*
           <View style={(styles.placeforMap, StyleSheet.absoluteFillObject)}>
             <MapView
               style={(styles.map, StyleSheet.absoluteFillObject)}
@@ -149,7 +156,7 @@ export default Home = () => {
                 longitudeDelta: 0.05,
               }}
             >
-              {/* Alle Mask markers */}
+              { Alle Mask markers }
               {maskData.map((point) => (
                 <MaskMarker
                   key={`${point.coordinate.latitude};${point.coordinate.longitude}`}
@@ -159,7 +166,7 @@ export default Home = () => {
                 />
               ))}
 
-              {/* Alle restricted regions */}
+              { Alle restricted regions }
               {restrictedRegions.map((region) => (
                 <RestrictedRegion
                   key={`${region.coordinates[0].latitude};${region.coordinates[0].longitude}`}
@@ -168,6 +175,7 @@ export default Home = () => {
                 />
               ))}
             </MapView>
+            */}
 
             {/*Das ist die View der Searchbar, also ein Inputfeld und das Such-Icon */}
             <View style={styles.searchContainer}>
@@ -203,7 +211,7 @@ export default Home = () => {
             </View>
             {/*<View style={{ position: "absolute", top: 100, left: 50 }} />*/}
           </View>
-        </View>
+        {/*</View>*/}
       </View>
     </TouchableWithoutFeedback>
   );
