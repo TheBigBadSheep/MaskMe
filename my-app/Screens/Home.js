@@ -130,7 +130,7 @@ export default Home = () => {
 
             <Button
               type="clear"
-              icon={<Ionicons name="search-outline" size={24} color={'#CDC9C9'} />}
+              icon={<Ionicons name="search-outline" paddingRight={2} size={24} color={'#CDC9C9'} />}
             />
           </View>
         </View>

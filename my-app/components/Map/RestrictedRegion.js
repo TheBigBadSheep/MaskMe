@@ -6,7 +6,7 @@ export default RestrictedRegion = ({ coordinates, width }) => {
     <Polyline
       coordinates={coordinates}
       strokeWidth={width}
-      strokeColor="blue"
+      strokeColor="#4E51FF"
       lineJoin="bevel"
       lineCap="round"
     />
