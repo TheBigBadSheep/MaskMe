@@ -9,7 +9,7 @@ export default StyleSheet.create({
 
   logo:{
     height: "42%",
-    width: "12%",
+    width: "14%",
     alignSelf: "flex-start",
     marginLeft: 20,
     marginBottom: 0
@@ -68,7 +68,7 @@ export default StyleSheet.create({
   searchContainer: {
     flexDirection: "row",
     height: '7%',
-    width: '100%',
+    width: '97%',
     backgroundColor: 'white',
     marginTop: '4%',
     borderRadius: 19,
