@@ -183,7 +183,7 @@ export default List = () => {
                                                 <Ionicons name="reader-outline" style={styles.listIcons} size={size} />
 
                                                 {/*Hier ist noch n Link hinter dem Wort 'Website' hinterlegt, damit man direkt auf die Quelle kommt. */}
-                                                <Text style={styles.listText}><Text style={styles.listHinweis}>Quelle:</Text> Die Daten für maskenpflichtige Orte, Straßen und Ausnahmen wurden aus der offiziellen <Text style={{ color: "lightgray" }}
+                                                <Text style={styles.listText}><Text style={styles.listHinweis}>Quelle:</Text> Die Daten für maskenpflichtige Orte, Straßen und Ausnahmen wurden aus der offiziellen <Text style={{ color: "#B2E0E6"}}
                                                         onPress={() => Linking.openURL('https://www.hamburg.de/coronavirus/aktuelles/14435302/2020-10-10-maskenpflicht-an-oeffentlichen-plaetzen/')}>
                                                         Website
                                                 </Text> der Stadt Hamburg entnommen. Es wird keine Garantie für Korrektheit und/oder Aktualität der Angaben übernommen. Stand: 26. Mai 2021</Text>
