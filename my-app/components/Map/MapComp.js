@@ -11,7 +11,7 @@ import RestrictedRegion from "./RestrictedRegion";
 
 export default MapComp = ({ coords }) => {
     const [isReady, setReady] = useState(false);
-    const [hasGPS, setGPS] = useState(false);
+    const [hasGPS, setGPS] = useState(true);
 
     useEffect(() => {
         getMyStuff("GPS")

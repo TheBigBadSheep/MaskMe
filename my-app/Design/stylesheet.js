@@ -11,7 +11,7 @@ export default StyleSheet.create({
     height: "42%",
     width: "14%",
     alignSelf: "flex-start",
-    marginLeft: 20,
+    marginLeft: 0.02 * screen.height,
     marginBottom: 0
   },
   textbalken: {
@@ -22,13 +22,7 @@ export default StyleSheet.create({
     justifyContent: 'center',
   },
 
-  fetteSchrift: {
-    fontWeight: 'bold',
-    color: maincolor,
-    fontSize: 38,
-    alignSelf: 'flex-start',
-    marginLeft: '8%',
-  },
+ 
 
   weisserText: {
     fontSize: 0.018 * screen.height,
@@ -86,6 +80,7 @@ export default StyleSheet.create({
    borderRadius: 90,
     borderWidth: 0, 
      elevation: 40,
+     
     //flexDirection: 'row',
     backgroundColor: "transparent",
     borderBottomWidth: 0,
@@ -135,7 +130,7 @@ export default StyleSheet.create({
 
   settingText: {
     color: maincolor,
-    fontSize: 20,
+    fontSize: 0.02 * screen.height,
     margin: '4%',
   },
 
@@ -150,6 +145,24 @@ export default StyleSheet.create({
     height: '20%',
     width: '100%',
     backgroundColor: maincolor,
+  },
+  HinweisNeustart:{
+   
+    fontSize: 0.02 * screen.height,
+    alignSelf: 'flex-start',
+    marginLeft: '10%',
+    marginRight: '10%',
+    marginTop: '4%',
+
+
+    color: accentgrey,
+  
+    
+  },
+  NeustartTextBeginning:{
+    fontSize:  0.02 * screen.height,
+    color: 'grey',
+    marginLeft: '5%',
   },
 
   impressumHeading: {
@@ -212,7 +225,7 @@ export default StyleSheet.create({
   },
 
   listTextBeginning: {
-    fontSize: 20,
+    fontSize: 0.02 * screen.height,
     color: 'grey',
     marginLeft: '5%',
   },

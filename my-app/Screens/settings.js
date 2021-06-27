@@ -93,6 +93,8 @@ export default Settings = () => {
 
 
         </View>
+         <Text style={styles.HinweisNeustart}><Text style={styles.NeustartTextBeginning}>Hinweis: </Text>Starte die App neu, um die Einstellungen zu übernehmen</Text>
+                                      
 
         <Text style={styles.impressumHeading}>Impressum</Text>
         <View style={styles.impressum}>
