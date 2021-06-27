@@ -70,21 +70,22 @@ export default StyleSheet.create({
     height: '7%',
     width: '97%',
     marginTop: '4%',
-    borderRadius: 19,
-
+    
     //Schatten IOS
     shadowColor: 'black',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.3,
-
-    // Schatten für Android
-    elevation: 10,
-    justifyContent: 'center',
+    
     alignItems: 'center',
   },
 
   searchbar: {
-    flex: 1,
+    flex: 1,  
+
+    // Schatten für Android
+   borderRadius: 90,
+    borderWidth: 0, 
+     elevation: 40,
     //flexDirection: 'row',
     backgroundColor: "transparent",
     borderBottomWidth: 0,
